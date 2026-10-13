@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Липовский Даниил — fullstack-разработчик</title>
+  <meta name="description" content="Fullstack-разработчик из Беларуси: веб-сайты на C#, Python и PHP, Android-приложения на Java, облачные сервисы Firebase и Cloudflare.">
+  <meta name="theme-color" content="#f9edd2">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Липовский Даниил — fullstack-разработчик">
+  <meta property="og:description" content="Портфолио: веб-сайты, Android-приложения, десктопные приложения и инструменты разработчика.">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/lang.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-github" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+  </symbol>
+  <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 7h10v10"/><path d="M7 17 17 7"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>
+  </symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/>
+  </symbol>
+  <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/>
+  </symbol>
+  <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>
+  </symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+  </symbol>
+</svg>
+
+<a class="skip-link" href="#main"><span data-lang="ru">Перейти к содержимому</span><span data-lang="en">Skip to content</span></a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="#top" aria-label="Липовский Даниил — в начало страницы" data-aria-en="Daniil Lipouski — back to top">
+      <svg viewBox="0 0 44 32" width="44" height="32" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M13 6 3 16l10 10"/>
+        <path d="M31 6l10 10-10 10"/>
+        <path class="logo__slash" d="M25 4 19 28"/>
+      </svg>
+    </a>
+
+    <nav class="site-nav" aria-label="Разделы сайта" data-aria-en="Site sections">
+      <a href="#projects"><span data-lang="ru">Проекты</span><span data-lang="en">Projects</span></a>
+      <a href="#stack"><span data-lang="ru">Технологии</span><span data-lang="en">Skills</span></a>
+      <a href="#path"><span data-lang="ru">Опыт</span><span data-lang="en">Experience</span></a>
+      <a href="#contact"><span data-lang="ru">Контакты</span><span data-lang="en">Contact</span></a>
+    </nav>
+
+    <div class="site-header__actions">
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch to English">
+        <svg class="lang-toggle__globe" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M2 12h20"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        <span class="lang-toggle__code" aria-hidden="true"><span data-lang="ru">RU</span><span data-lang="en">EN</span></span>
+      </button>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Переключить тему оформления">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="container">
+
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div>
+      <ul class="hero__meta">
+        <li class="hero__status"><span data-lang="ru">Открыт к предложениям</span><span data-lang="en">Open to offers</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-lang="ru">Беларусь</span><span data-lang="en">Belarus</span></li>
+        <li>
+          <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+          <span><span data-lang="ru">Дата рождения: </span><span data-lang="en">Date of birth: </span><time datetime="2005-06-20" id="birth-date"><span data-lang="ru">20.06.2005</span><span data-lang="en">20 June 2005</span></time><span id="age"></span></span>
+        </li>
+      </ul>
+      <h1 class="hero__title" id="hero-title"><span data-lang="ru">Липовский Даниил, fullstack-разработчик</span><span data-lang="en">Daniil Lipouski, fullstack developer</span></h1>
+      <p class="hero__lead">
+        <span data-lang="ru">Разрабатываю веб-сайты, мобильные и десктопные приложения, чат-ботов. Выполняю полный цикл работ: проектирование базы данных, серверная часть, пользовательский интерфейс, развёртывание на хостинге и VPS.</span>
+        <span data-lang="en">I build websites, mobile and desktop applications, and chatbots. I cover the full cycle: database design, back end, user interface and deployment to shared hosting or a VPS.</span>
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="#contact"><span data-lang="ru">Связаться</span><span data-lang="en">Get in touch</span></a>
+        <a class="btn" href="assets/resume.pdf" download data-lang="ru">
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+          Скачать резюме (PDF)
+        </a>
+        <a class="btn" href="assets/resume-en.pdf" download data-lang="en">
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+          Download CV (PDF)
+        </a>
+      </div>
+      <ul class="hero__facts">
+        <li>
+          <span class="hero__fact-value"><span data-lang="ru">с 2021</span><span data-lang="en">2021</span></span>
+          <span class="hero__fact-label"><span data-lang="ru">года в разработке</span><span data-lang="en">started building software</span></span>
+        </li>
+        <li>
+          <span class="hero__fact-value"><span data-lang="ru">≈1 год</span><span data-lang="en">≈1 year</span></span>
+          <span class="hero__fact-label"><span data-lang="ru">коммерческой разработки</span><span data-lang="en">of commercial work</span></span>
+        </li>
+        <li>
+          <span class="hero__fact-value">25+</span>
+          <span class="hero__fact-label"><span data-lang="ru">завершённых проектов</span><span data-lang="en">completed projects</span></span>
+        </li>
+      </ul>
+    </div>
+
+    <svg class="route" viewBox="0 -50 560 530" role="img" aria-label="Схема навыков в виде карты метро: основа, веб-разработка, мобильная разработка, десктоп и автоматизация, серверы, облако и боты" data-aria-en="Skill map styled as a metro map: foundation, web development, mobile development, desktop and automation, servers, cloud and bots">
+      <g class="route__legend">
+        <text class="route__legend-title" x="0" y="-28" data-lang="ru">Схема навыков</text>
+        <text class="route__legend-title" x="0" y="-28" data-lang="en">Skill map</text>
+        <text x="0" y="-6" data-lang="ru">в разработке с 2021 года</text>
+        <text x="0" y="-6" data-lang="en">building software since 2021</text>
+        <g class="route__key route__key--web"><path d="M2 22h22"/><text x="34" y="26" data-lang="ru">Веб-разработка</text><text x="34" y="26" data-lang="en">Web development</text></g>
+        <g class="route__key route__key--mobile"><path d="M2 42h22"/><text x="34" y="46" data-lang="ru">Мобильная разработка</text><text x="34" y="46" data-lang="en">Mobile development</text></g>
+        <g class="route__key route__key--desktop"><path d="M2 62h22"/><text x="34" y="66" data-lang="ru">Десктоп и автоматизация</text><text x="34" y="66" data-lang="en">Desktop and automation</text></g>
+        <g class="route__key route__key--cloud"><path d="M2 82h22"/><text x="34" y="86" data-lang="ru">Серверы, облако и боты</text><text x="34" y="86" data-lang="en">Servers, cloud and bots</text></g>
+      </g>
+
+      <path class="route__track" d="M213 -22 V152"/>
+      <path class="route__track" d="M213 152 C213 192 12 177 12 217 V453"/>
+      <path class="route__track" d="M213 152 C213 192 146 177 146 217 V345"/>
+      <path class="route__track" d="M213 152 C213 192 280 177 280 217 V345"/>
+      <path class="route__track" d="M213 152 C213 192 414 177 414 217 V453"/>
+
+      <path class="route__line route__line--trunk" d="M213 -22 V152" pathLength="1" style="--start: 0.2s; --dur: 0.8s"/>
+      <path class="route__line route__line--web" d="M213 152 C213 192 12 177 12 217 V453" pathLength="1" style="--start: 1s"/>
+      <path class="route__line route__line--mobile" d="M213 152 C213 192 146 177 146 217 V345" pathLength="1" style="--start: 1.1s; --dur: 1s"/>
+      <path class="route__line route__line--desktop" d="M213 152 C213 192 280 177 280 217 V345" pathLength="1" style="--start: 1.2s; --dur: 1s"/>
+      <path class="route__line route__line--cloud" d="M213 152 C213 192 414 177 414 217 V453" pathLength="1" style="--start: 1.3s"/>
+
+      <g class="route__pin route__pin--trunk" style="--delay: 0.2s"><circle cx="213" cy="-22" r="7"/><text x="231" y="-17">HTML · CSS</text></g>
+      <g class="route__pin route__pin--trunk" style="--delay: 0.42s"><circle cx="213" cy="26" r="7"/><text x="231" y="31">JavaScript · Git</text></g>
+      <g class="route__pin route__pin--trunk" style="--delay: 0.64s"><circle cx="213" cy="74" r="7"/><text x="231" y="79">MySQL · PostgreSQL</text></g>
+      <g class="route__pin route__pin--hub" style="--delay: 1s"><circle cx="213" cy="152" r="10"/><text x="235" y="150">Fullstack</text></g>
+
+      <g class="route__pin route__pin--web" style="--delay: 1.83s"><circle cx="12" cy="237" r="7"/><text x="28" y="241">C# · ASP.NET<tspan class="route__sub" x="28" dy="15">Core MVC · EF Core</tspan></text></g>
+      <g class="route__pin route__pin--web" style="--delay: 2.02s"><circle cx="12" cy="291" r="7"/><text x="28" y="295">PHP · Laravel</text></g>
+      <g class="route__pin route__pin--web" style="--delay: 2.22s"><circle cx="12" cy="345" r="7"/><text x="28" y="349">Python<tspan class="route__sub" x="28" dy="15">Django · FastAPI</tspan></text></g>
+      <g class="route__pin route__pin--web" style="--delay: 2.41s"><circle cx="12" cy="399" r="7"/><text x="28" y="403">Vue.js · jQuery</text></g>
+      <g class="route__pin route__pin--web" style="--delay: 2.6s"><circle cx="12" cy="453" r="7"/><text x="28" y="457" data-lang="ru">WordPress<tspan class="route__sub" x="28" dy="15">1С-Битрикс</tspan></text><text x="28" y="457" data-lang="en">WordPress<tspan class="route__sub" x="28" dy="15">1C-Bitrix</tspan></text></g>
+
+      <g class="route__pin route__pin--mobile" style="--delay: 1.62s"><circle cx="146" cy="237" r="7"/><text x="162" y="241">Java · Android</text></g>
+      <g class="route__pin route__pin--mobile" style="--delay: 1.86s"><circle cx="146" cy="291" r="7"/><text x="162" y="295">Jetpack · MVVM</text></g>
+      <g class="route__pin route__pin--mobile" style="--delay: 2.1s"><circle cx="146" cy="345" r="7"/><text x="162" y="349">Firebase<tspan class="route__sub" x="162" dy="15">Auth · Firestore</tspan></text></g>
+
+      <g class="route__pin route__pin--desktop" style="--delay: 1.72s"><circle cx="280" cy="237" r="7"/><text x="296" y="241">C# · WinForms</text></g>
+      <g class="route__pin route__pin--desktop" style="--delay: 1.96s"><circle cx="280" cy="291" r="7"/><text x="296" y="295" data-lang="ru">Delphi<tspan class="route__sub" x="296" dy="15">автоматизация</tspan></text><text x="296" y="295" data-lang="en">Delphi<tspan class="route__sub" x="296" dy="15">automation</tspan></text></g>
+      <g class="route__pin route__pin--desktop" style="--delay: 2.2s"><circle cx="280" cy="345" r="7"/><text x="296" y="349" data-lang="ru">1С:Предприятие</text><text x="296" y="349" data-lang="en">1C:Enterprise</text></g>
+
+      <g class="route__pin route__pin--cloud" style="--delay: 2.16s"><circle cx="414" cy="237" r="7"/><text x="430" y="241">Linux · VPS</text></g>
+      <g class="route__pin route__pin--cloud" style="--delay: 2.34s"><circle cx="414" cy="291" r="7"/><text x="430" y="295">Docker · Nginx</text></g>
+      <g class="route__pin route__pin--cloud" style="--delay: 2.53s"><circle cx="414" cy="345" r="7"/><text x="430" y="349">Cloudflare Workers</text></g>
+      <g class="route__pin route__pin--cloud" style="--delay: 2.71s"><circle cx="414" cy="399" r="7"/><text x="430" y="403" data-lang="ru">Telegram-боты<tspan class="route__sub" x="430" dy="15">Python · Bot API</tspan></text><text x="430" y="403" data-lang="en">Telegram bots<tspan class="route__sub" x="430" dy="15">Python · Bot API</tspan></text></g>
+      <g class="route__pin route__pin--cloud" style="--delay: 2.9s"><circle cx="414" cy="453" r="7"/><text x="430" y="457" data-lang="ru">Discord · VK<tspan class="route__sub" x="430" dy="15">и другие платформы</tspan></text><text x="430" y="457" data-lang="en">Discord · VK<tspan class="route__sub" x="430" dy="15">and other platforms</tspan></text></g>
+
+      <circle class="route__runner route__runner--web" r="5" style="--delay: 3.2s">
+        <animateMotion dur="5s" begin="3.2s" repeatCount="indefinite" path="M213 -22 V152 C213 192 12 177 12 217 V453"/>
+      </circle>
+      <circle class="route__runner route__runner--mobile" r="5" style="--delay: 3.6s">
+        <animateMotion dur="4s" begin="3.6s" repeatCount="indefinite" path="M213 -22 V152 C213 192 146 177 146 217 V345"/>
+      </circle>
+      <circle class="route__runner route__runner--desktop" r="5" style="--delay: 4s">
+        <animateMotion dur="4s" begin="4s" repeatCount="indefinite" path="M213 -22 V152 C213 192 280 177 280 217 V345"/>
+      </circle>
+      <circle class="route__runner route__runner--cloud" r="5" style="--delay: 4.4s">
+        <animateMotion dur="5s" begin="4.4s" repeatCount="indefinite" path="M213 -22 V152 C213 192 414 177 414 217 V453"/>
+      </circle>
+    </svg>
+  </section>
+
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="section__head">
+      <h2 class="section__title" id="projects-title"><span data-lang="ru">Проекты</span><span data-lang="en">Projects</span></h2>
+      <p class="section__lead"><span data-lang="ru">Все проекты разработаны самостоятельно: от проектирования данных до публикации.</span><span data-lang="en">Every project was built single-handedly, from data design to deployment.</span></p>
+    </div>
+
+    <article class="featured" aria-labelledby="traces-title">
+      <div>
+        <p class="featured__badge"><span data-lang="ru">Дипломный проект</span><span data-lang="en">Graduation project</span></p>
+        <h3 class="featured__title" id="traces-title"><span data-lang="ru">Traces — путеводитель по памятным местам Беларуси</span><span data-lang="en">Traces — a guide to memorial sites of Belarus</span></h3>
+        <p class="featured__meta"><span data-lang="ru">Веб-сайт и мобильное приложение для Android</span><span data-lang="en">Website and Android mobile app</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">База из 102 объектов, 7 из которых представлены 3D-моделями. Интерактивная карта, поиск, интерфейс на белорусском, русском и английском языках.</span><span data-lang="en">A database of 102 sites, 7 of them with 3D models. Interactive map, search, interface in Belarusian, Russian and English.</span></li>
+          <li><span data-lang="ru">ИИ-гид отвечает на вопросы пользователей и формирует маршруты по городу или области из объектов проекта.</span><span data-lang="en">An AI guide answers visitors' questions and builds routes across a city or region from the project's sites.</span></li>
+          <li><span data-lang="ru">Планировщик поездок: оптимизация порядка точек, построение маршрута по дорогам, распределение по дням, поиск ресторанов и отелей поблизости.</span><span data-lang="en">Trip planner: stop order optimisation, road routing, day-by-day plans, nearby restaurants and hotels.</span></li>
+          <li><span data-lang="ru">Личный кабинет с сохранёнными маршрутами, отзывами и оценками. Панель администратора: статистика, управление страницами, модерация пользователей, публикация APK-файлов.</span><span data-lang="en">Personal account with saved routes, reviews and ratings. Admin panel: statistics, page management, user moderation, APK publishing.</span></li>
+        </ul>
+        <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+          <li class="chip">Java (Android)</li>
+          <li class="chip">JavaScript</li>
+          <li class="chip">Firebase Authentication</li>
+          <li class="chip">Cloud Firestore</li>
+          <li class="chip">Cloudflare Workers</li>
+          <li class="chip"><span data-lang="ru">Cloudflare R2 и KV</span><span data-lang="en">Cloudflare R2 and KV</span></li>
+          <li class="chip">Leaflet</li>
+          <li class="chip">osmdroid</li>
+          <li class="chip">OSRM</li>
+          <li class="chip">Overpass API</li>
+          <li class="chip">OpenRouter</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="https://traces-ffd5c.web.app/" target="_blank" rel="noopener">
+            <span data-lang="ru">Открыть сайт</span><span data-lang="en">Open website</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+          <a class="btn" href="https://github.com/TheFulum/traces.web-app" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+            <span data-lang="ru">Код сайта</span><span data-lang="en">Website code</span>
+          </a>
+          <a class="btn" href="https://github.com/TheFulum/traces.mobile-app" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+            <span data-lang="ru">Код приложения</span><span data-lang="en">App code</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="stats">
+        <p><span class="stat__value" data-count="102">102</span><span class="stat__label"><span data-lang="ru">объекта на карте</span><span data-lang="en">sites on the map</span></span></p>
+        <p><span class="stat__value" data-count="7">7</span><span class="stat__label"><span data-lang="ru">3D-моделей</span><span data-lang="en">3D models</span></span></p>
+        <p><span class="stat__value" data-count="3">3</span><span class="stat__label"><span data-lang="ru">языка интерфейса</span><span data-lang="en">interface languages</span></span></p>
+      </div>
+    </article>
+
+    <div class="filters" id="project-filters" role="group" aria-label="Фильтр проектов" data-aria-en="Project filter" hidden>
+      <button class="filter" type="button" data-filter="all" aria-pressed="true"><span data-lang="ru">Все</span><span data-lang="en">All</span> <span class="filter__count"></span></button>
+      <button class="filter" type="button" data-filter="web" aria-pressed="false"><span data-lang="ru">Веб</span><span data-lang="en">Web</span> <span class="filter__count"></span></button>
+      <button class="filter" type="button" data-filter="android" aria-pressed="false">Android <span class="filter__count"></span></button>
+      <button class="filter" type="button" data-filter="desktop" aria-pressed="false"><span data-lang="ru">Десктоп</span><span data-lang="en">Desktop</span> <span class="filter__count"></span></button>
+      <button class="filter" type="button" data-filter="tools" aria-pressed="false"><span data-lang="ru">Инструменты</span><span data-lang="en">Tools</span> <span class="filter__count"></span></button>
+    </div>
+    <p class="visually-hidden" id="filter-status" aria-live="polite"></p>
+
+    <div class="project-grid" id="project-grid">
+
+      <article class="card" data-category="web">
+        <p class="card__type"><span data-lang="ru">Веб-сайт</span><span data-lang="en">Website</span></p>
+        <h3 class="card__title">BelarusHeritage</h3>
+        <p><span data-lang="ru">Информационный сайт о культурном наследии Беларуси.</span><span data-lang="en">An information website about the cultural heritage of Belarus.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Каталог объектов, интерактивная карта, хронология событий, викторины.</span><span data-lang="en">Heritage catalogue, interactive map, timeline of events, quizzes.</span></li>
+          <li><span data-lang="ru">Конструктор маршрутов по дорогам с выбором альтернатив и оптимизацией, конструктор орнаментов.</span><span data-lang="en">Road route builder with alternative paths and optimisation, ornament builder.</span></li>
+          <li><span data-lang="ru">Разграничение ролей, панель администратора с журналом действий, интерфейс на трёх языках.</span><span data-lang="en">Role-based access, admin panel with an audit log, interface in three languages.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">ASP.NET Core 8 MVC</li>
+            <li class="chip">EF Core</li>
+            <li class="chip"><span data-lang="ru">MySQL, 32 таблицы</span><span data-lang="en">MySQL, 32 tables</span></li>
+            <li class="chip">Identity + JWT</li>
+            <li class="chip">jQuery</li>
+            <li class="chip">Bootstrap</li>
+            <li class="chip">Leaflet</li>
+            <li class="chip">MapLibre</li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://github.com/TheFulum/BelarusHeritage" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="web">
+        <p class="card__type"><span data-lang="ru">Коммерческий проект</span><span data-lang="en">Commercial project</span></p>
+        <h3 class="card__title"><span data-lang="ru">Дари радость</span><span data-lang="en">Dari Radost</span></h3>
+        <p><span data-lang="ru">Каталог идей для подарков: сертификаты на услуги и впечатления от компаний-партнёров.</span><span data-lang="en">A gift ideas catalogue: service and experience certificates from partner companies.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Каталог идей с поиском, разделы проектов партнёров, услуг и проката.</span><span data-lang="en">Ideas catalogue with search, plus sections for partner projects, services and rentals.</span></li>
+          <li><span data-lang="ru">Блог «Идеи и вдохновение», формы обратной связи и заявок.</span><span data-lang="en">An "Ideas and Inspiration" blog, feedback and request forms.</span></li>
+          <li><span data-lang="ru">Разработан самостоятельно по заказу клиента, сайт работает.</span><span data-lang="en">Built single-handedly for a client; the website is live.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">WordPress</li>
+            <li class="chip">WooCommerce</li>
+            <li class="chip">Elementor</li>
+            <li class="chip">Contact Form 7</li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://dari-radost.by/" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>dari-radost.by
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="web">
+        <p class="card__type"><span data-lang="ru">Коммерческий проект</span><span data-lang="en">Commercial project</span></p>
+        <h3 class="card__title">Mirno.by</h3>
+        <p><span data-lang="ru">Сайт службы медиации: урегулирование споров без обращения в суд.</span><span data-lang="en">A mediation service website: resolving disputes out of court.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Направления работы медиаторов, каталог специалистов, статьи.</span><span data-lang="en">Mediators' practice areas, specialist directory, articles.</span></li>
+          <li><span data-lang="ru">Подбор медиатора и заказ обратного звонка с защитой reCAPTCHA.</span><span data-lang="en">Mediator selection and callback requests protected by reCAPTCHA.</span></li>
+          <li><span data-lang="ru">Разработан самостоятельно по заказу клиента, сайт работает.</span><span data-lang="en">Built single-handedly for a client; the website is live.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">WordPress</li>
+            <li class="chip">Slider Revolution</li>
+            <li class="chip"><span data-lang="ru">Яндекс Метрика</span><span data-lang="en">Yandex Metrica</span></li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://mirno.by/" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>mirno.by
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="web">
+        <p class="card__type"><span data-lang="ru">Проекты по ТЗ</span><span data-lang="en">Client projects</span></p>
+        <h3 class="card__title"><span data-lang="ru">Веб-приложения на заказ</span><span data-lang="en">Web applications for clients</span></h3>
+        <p><span data-lang="ru">Интернет-магазин музыкальных инструментов и сервис заказа кейтеринга, разработанные по техническим заданиям заказчиков.</span><span data-lang="en">An online musical instrument store and a catering ordering service, built to client specifications.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Каталог, карточка товара, корзина и оформление заказа.</span><span data-lang="en">Catalogue, product page, cart and checkout.</span></li>
+          <li><span data-lang="ru">Регистрация и вход с хешированием паролей BCrypt.</span><span data-lang="en">Sign-up and sign-in with BCrypt password hashing.</span></li>
+          <li><span data-lang="ru">Панель администратора: товары, пользователи и заказы.</span><span data-lang="en">Admin panel for products, users and orders.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">ASP.NET Core MVC</li>
+            <li class="chip">EF Core</li>
+            <li class="chip">MySQL</li>
+            <li class="chip">BCrypt</li>
+            <li class="chip">Bootstrap</li>
+          </ul>
+          <p class="card__note"><span data-lang="ru">Исходный код принадлежит заказчикам.</span><span data-lang="en">Source code belongs to the clients.</span></p>
+        </div>
+      </article>
+
+      <article class="card" data-category="android">
+        <p class="card__type"><span data-lang="ru">Android и веб</span><span data-lang="en">Android and web</span></p>
+        <h3 class="card__title">Time2Help</h3>
+        <p><span data-lang="ru">Платформа для волонтёров и организаторов мероприятий.</span><span data-lang="en">A platform for volunteers and event organisers.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Мероприятия, заявки волонтёров, регулярные еженедельные серии.</span><span data-lang="en">Events, volunteer applications, recurring weekly series.</span></li>
+          <li><span data-lang="ru">Отметка участников по QR-коду, календарь с напоминаниями, рейтинги волонтёров.</span><span data-lang="en">QR check-in for participants, calendar with reminders, volunteer ratings.</span></li>
+          <li><span data-lang="ru">Личные и групповые чаты, веб-панель администратора.</span><span data-lang="en">Private and group chats, web admin panel.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">Java</li>
+            <li class="chip">MVVM</li>
+            <li class="chip">Firebase Authentication</li>
+            <li class="chip">Cloud Firestore</li>
+            <li class="chip">Cloudinary</li>
+            <li class="chip">osmdroid</li>
+            <li class="chip">ZXing</li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://github.com/TheFulum/-time2help.app" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Приложение</span><span data-lang="en">App</span>
+            </a>
+            <a class="link" href="https://github.com/TheFulum/time2help.admin" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Админ-панель</span><span data-lang="en">Admin panel</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="android">
+        <p class="card__type">Android</p>
+        <h3 class="card__title"><span data-lang="ru">Мой город</span><span data-lang="en">My City</span></h3>
+        <p><span data-lang="ru">Городская платформа для жителей Могилёва: обращения о проблемах, новости и общественный транспорт.</span><span data-lang="en">A city platform for Mogilev residents: issue reports, news and public transport.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Обращения с фотографиями и геометкой, комментарии, модерация администратором.</span><span data-lang="en">Issue reports with photos and geotags, comments, admin moderation.</span></li>
+          <li><span data-lang="ru">Новостная лента из RSS-источников с фоновым обновлением.</span><span data-lang="en">News feed from RSS sources with background updates.</span></li>
+          <li><span data-lang="ru">Маршруты и остановки транспорта, данные для которых собирает парсер на Node.js.</span><span data-lang="en">Transport routes and stops, with data collected by a Node.js scraper.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">Java</li>
+            <li class="chip">Firebase Authentication</li>
+            <li class="chip">Cloud Firestore</li>
+            <li class="chip">Cloudinary</li>
+            <li class="chip">osmdroid</li>
+            <li class="chip">Retrofit</li>
+            <li class="chip">WorkManager</li>
+            <li class="chip">Node.js</li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://github.com/TheFulum/mycity" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="web">
+        <p class="card__type"><span data-lang="ru">Веб-сайт</span><span data-lang="en">Website</span></p>
+        <h3 class="card__title">WholesaleShop</h3>
+        <p><span data-lang="ru">Интернет-магазин с оптовыми ценами и пунктами самовывоза.</span><span data-lang="en">An online store with wholesale pricing and pickup points.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Каталог, корзина, оформление и отслеживание заказов, оценки товаров.</span><span data-lang="en">Catalogue, cart, checkout and order tracking, product ratings.</span></li>
+          <li><span data-lang="ru">Оптовые ценовые уровни и заявки на получение оптового статуса.</span><span data-lang="en">Wholesale price tiers and applications for wholesale status.</span></li>
+          <li><span data-lang="ru">Панель администратора, отчёты по заказам с экспортом в Excel.</span><span data-lang="en">Admin panel and order reports with Excel export.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">ASP.NET Core 8 MVC</li>
+            <li class="chip">EF Core</li>
+            <li class="chip">MySQL</li>
+            <li class="chip">BCrypt</li>
+            <li class="chip">ClosedXML</li>
+            <li class="chip">Chart.js</li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://github.com/TheFulum/WholesaleShop" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="android">
+        <p class="card__type">Android</p>
+        <h3 class="card__title">Poligram</h3>
+        <p><span data-lang="ru">Мессенджер с обменом медиафайлами.</span><span data-lang="en">A messenger with media sharing.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Фотографии, видео, документы и голосовые сообщения.</span><span data-lang="en">Photos, videos, documents and voice messages.</span></li>
+          <li><span data-lang="ru">Ответы, пересылка и редактирование сообщений, статусы прочтения.</span><span data-lang="en">Replies, forwarding and message editing, read receipts.</span></li>
+          <li><span data-lang="ru">Статус «в сети», блокировка пользователей, уведомления о новых сообщениях.</span><span data-lang="en">Online status, user blocking, new message notifications.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">Java</li>
+            <li class="chip">Firebase Realtime Database</li>
+            <li class="chip">Firebase Authentication</li>
+            <li class="chip">Cloudinary</li>
+            <li class="chip">ExoPlayer</li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://github.com/TheFulum/AndroidMessenger" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="android">
+        <p class="card__type">Android</p>
+        <h3 class="card__title">OwnTest</h3>
+        <p><span data-lang="ru">Платформа для создания и прохождения тестов.</span><span data-lang="en">A platform for creating and taking tests.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Конструктор тестов с несколькими типами вопросов и начислением баллов.</span><span data-lang="en">Test builder with several question types and scoring.</span></li>
+          <li><span data-lang="ru">Автоматическая и ручная проверка ответов, повторные попытки.</span><span data-lang="en">Automatic and manual answer review, repeat attempts.</span></li>
+          <li><span data-lang="ru">Рейтинг тестов, история прохождений, уведомления.</span><span data-lang="en">Test ratings, attempt history, notifications.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">Java</li>
+            <li class="chip">Firebase Realtime Database</li>
+            <li class="chip">Firebase Authentication</li>
+            <li class="chip">Cloudinary</li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://github.com/TheFulum/OwnTest" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="android">
+        <p class="card__type">Android</p>
+        <h3 class="card__title">FamilyHelper</h3>
+        <p><span data-lang="ru">Планировщик семейных задач.</span><span data-lang="en">A family task planner.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Создание семьи и приглашение участников.</span><span data-lang="en">Creating a family and inviting members.</span></li>
+          <li><span data-lang="ru">Задачи с приоритетами, сроками и отметкой о выполнении.</span><span data-lang="en">Tasks with priorities, due dates and completion marks.</span></li>
+          <li><span data-lang="ru">Комментарии к задачам, профили участников.</span><span data-lang="en">Task comments and member profiles.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">Java</li>
+            <li class="chip">Firebase Authentication</li>
+            <li class="chip">Cloud Firestore</li>
+            <li class="chip">Cloudinary</li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://github.com/TheFulum/Family-Helper" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="desktop">
+        <p class="card__type"><span data-lang="ru">Проекты по ТЗ</span><span data-lang="en">Client projects</span></p>
+        <h3 class="card__title"><span data-lang="ru">Десктопные приложения на заказ</span><span data-lang="en">Desktop applications for clients</span></h3>
+        <p><span data-lang="ru">Приложения с базами данных, разработанные по техническим заданиям заказчиков: 11 программ на Delphi и админ-панель на C#.</span><span data-lang="en">Database-driven applications built to client specifications: 11 Delphi programs and a C# admin panel.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Учёт и сервисы: агентство недвижимости, запись на приём к врачу, гарантийный отдел компьютерного магазина, учёт посещаемости с кодами входа.</span><span data-lang="en">Records and services: a real estate agency, doctor appointments, a computer store warranty desk, attendance tracking with sign-in codes.</span></li>
+          <li><span data-lang="ru">Магазины и склады: спортивное питание, музыкальные инструменты, автозапчасти, склад с фильтрами по цене и сроку годности.</span><span data-lang="en">Stores and warehouses: sports nutrition, musical instruments, car parts, a warehouse with price and expiry date filters.</span></li>
+          <li><span data-lang="ru">Дневник питания с подсчётом хлебных единиц, игра-викторина о Беларуси, админ-панель базы данных бота-викторины.</span><span data-lang="en">A food diary with bread unit counting, a quiz game about Belarus, an admin panel for a quiz bot database.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">Delphi</li>
+            <li class="chip">VCL</li>
+            <li class="chip">ADO</li>
+            <li class="chip">C#</li>
+            <li class="chip">Windows Forms</li>
+            <li class="chip">MySQL</li>
+          </ul>
+          <p class="card__note"><span data-lang="ru">Исходный код принадлежит заказчикам.</span><span data-lang="en">Source code belongs to the clients.</span></p>
+        </div>
+      </article>
+
+      <article class="card" data-category="web">
+        <p class="card__type"><span data-lang="ru">Стажировка Sotbit</span><span data-lang="en">Sotbit internship</span></p>
+        <h3 class="card__title"><span data-lang="ru">Чат и парсер на PHP</span><span data-lang="en">PHP chat and parser</span></h3>
+        <p><span data-lang="ru">Практические задания стажировки в компании Sotbit.</span><span data-lang="en">Hands-on assignments from an internship at Sotbit.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Чат на чистом PHP с собственным слоем моделей, учётными записями и передачей файлов. После сдачи выполнена оптимизация.</span><span data-lang="en">A chat in plain PHP with a custom model layer, user accounts and file sharing, optimised after delivery.</span></li>
+          <li><span data-lang="ru">Парсер Excel-файлов на PHP с использованием PhpSpreadsheet.</span><span data-lang="en">An Excel file parser in PHP built with PhpSpreadsheet.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">PHP</li>
+            <li class="chip">JavaScript</li>
+            <li class="chip">Composer</li>
+            <li class="chip">PhpSpreadsheet</li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://github.com/TheFulum/Chat" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Чат</span><span data-lang="en">Chat</span>
+            </a>
+            <a class="link" href="https://github.com/TheFulum/Parser" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Парсер</span><span data-lang="en">Parser</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="web">
+        <p class="card__type"><span data-lang="ru">По заказу преподавателя</span><span data-lang="en">For a college teacher</span></p>
+        <h3 class="card__title"><span data-lang="ru">Тренажёр по плану счетов</span><span data-lang="en">Chart of accounts trainer</span></h3>
+        <p><span data-lang="ru">Веб-приложение для проверки знаний плана счетов бухгалтерского учёта, разработанное для преподавателя колледжа.</span><span data-lang="en">A web app for testing knowledge of the accounting chart of accounts, built for a college teacher.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Создан для конкурса и для проверки знаний студентов на занятиях.</span><span data-lang="en">Made for a competition and for testing students in class.</span></li>
+          <li><span data-lang="ru">Тестирование с отдельной страницей результатов и страницей администратора.</span><span data-lang="en">Tests with a separate results page and an admin page.</span></li>
+          <li><span data-lang="ru">Работает без серверной части: вопросы хранятся в JSON, сайт опубликован на GitHub Pages.</span><span data-lang="en">Runs without a back end: questions are stored in JSON and the site is published on GitHub Pages.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">HTML</li>
+            <li class="chip">CSS</li>
+            <li class="chip">JavaScript</li>
+          </ul>
+          <div class="card__links">
+            <a class="link" href="https://thefulum.github.io/accounting-quiz/" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg><span data-lang="ru">Открыть</span><span data-lang="en">Open</span>
+            </a>
+            <a class="link" href="https://github.com/TheFulum/accounting-quiz" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="tools">
+        <p class="card__type"><span data-lang="ru">Инструмент</span><span data-lang="en">Tool</span></p>
+        <h3 class="card__title">Site Cloner</h3>
+        <p><span data-lang="ru">Консольная утилита для сохранения сайтов и их офлайн-просмотра, включая сайты на WebGL.</span><span data-lang="en">A command-line tool that saves websites for offline viewing, including WebGL sites.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Перехват всех сетевых ответов в headless Chromium и обход страниц до заданной глубины.</span><span data-lang="en">Captures every network response in headless Chromium and crawls pages to a set depth.</span></li>
+          <li><span data-lang="ru">Имитация действий пользователя для запуска WebGL и анимаций.</span><span data-lang="en">Simulates user actions to start WebGL scenes and animations.</span></li>
+          <li><span data-lang="ru">Докачка пропущенных файлов за несколько проходов через локальный сервер.</span><span data-lang="en">Downloads missing files in several passes through a local server.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">TypeScript</li>
+            <li class="chip">Node.js</li>
+            <li class="chip">Playwright</li>
+            <li class="chip">Cheerio</li>
+          </ul>
+          <p class="card__note"><span data-lang="ru">Исходный код не опубликован.</span><span data-lang="en">Source code is not published.</span></p>
+        </div>
+      </article>
+
+      <article class="card" data-category="tools">
+        <p class="card__type"><span data-lang="ru">Инфраструктура</span><span data-lang="en">Infrastructure</span></p>
+        <h3 class="card__title"><span data-lang="ru">Собственный VPN-сервер</span><span data-lang="en">Personal VPN server</span></h3>
+        <p><span data-lang="ru">Самостоятельное развёртывание и настройка VPN-сервера на VPS.</span><span data-lang="en">Deployed and configured a VPN server on a VPS on my own.</span></p>
+        <ul class="bullets">
+          <li><span data-lang="ru">Настройка сервера на Linux и панели управления 3X-UI.</span><span data-lang="en">Linux server and 3X-UI control panel setup.</span></li>
+          <li><span data-lang="ru">Протокол VLESS + Reality, подключение клиентских устройств.</span><span data-lang="en">VLESS + Reality protocol and client device setup.</span></li>
+        </ul>
+        <div class="card__bottom">
+          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
+            <li class="chip">Linux</li>
+            <li class="chip">VPS</li>
+            <li class="chip">3X-UI</li>
+            <li class="chip">VLESS + Reality</li>
+          </ul>
+          <p class="card__note"><span data-lang="ru">Личная инфраструктура.</span><span data-lang="en">Personal infrastructure.</span></p>
+        </div>
+      </article>
+
+    </div>
+
+    <nav class="pagination" id="project-pagination" aria-label="Страницы проектов" data-aria-en="Project pages" hidden></nav>
+  </section>
+
+  <section class="section" id="stack" aria-labelledby="stack-title">
+    <div class="section__head">
+      <h2 class="section__title" id="stack-title"><span data-lang="ru">Технологии</span><span data-lang="en">Skills</span></h2>
+      <p class="section__lead">
+        <span data-lang="ru">Технологии, отмеченные <span class="chip chip--basic">пунктиром</span>, освоены на базовом уровне.</span>
+        <span data-lang="en">Technologies with a <span class="chip chip--basic">dashed outline</span> are at a basic level.</span>
+      </p>
+    </div>
+
+    <div class="stack">
+      <div class="stack-row">
+        <h3 class="stack-row__title"><span data-lang="ru">Серверная часть</span><span data-lang="en">Back end</span></h3>
+        <ul class="chips">
+          <li class="chip">C# · ASP.NET Core MVC</li>
+          <li class="chip">Entity Framework Core</li>
+          <li class="chip">Python · Django · FastAPI</li>
+          <li class="chip">PHP</li>
+          <li class="chip">Bitrix Framework</li>
+          <li class="chip chip--basic">Laravel<span class="visually-hidden"><span data-lang="ru"> (базовый уровень)</span><span data-lang="en"> (basic level)</span></span></li>
+          <li class="chip">Java</li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3 class="stack-row__title"><span data-lang="ru">Клиентская часть</span><span data-lang="en">Front end</span></h3>
+        <ul class="chips">
+          <li class="chip">HTML5</li>
+          <li class="chip">CSS3 / SASS</li>
+          <li class="chip">JavaScript</li>
+          <li class="chip">jQuery</li>
+          <li class="chip">Bootstrap 4/5</li>
+          <li class="chip"><span data-lang="ru">Адаптивная вёрстка</span><span data-lang="en">Responsive layout</span></li>
+          <li class="chip chip--basic">Vue.js<span class="visually-hidden"><span data-lang="ru"> (базовый уровень)</span><span data-lang="en"> (basic level)</span></span></li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3 class="stack-row__title">CMS</h3>
+        <ul class="chips">
+          <li class="chip">WordPress</li>
+          <li class="chip"><span data-lang="ru">1С-Битрикс</span><span data-lang="en">1C-Bitrix</span></li>
+          <li class="chip chip--basic">Magento<span class="visually-hidden"><span data-lang="ru"> (базовый уровень)</span><span data-lang="en"> (basic level)</span></span></li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3 class="stack-row__title"><span data-lang="ru">Мобильная разработка</span><span data-lang="en">Mobile development</span></h3>
+        <ul class="chips">
+          <li class="chip">Android (Java)</li>
+          <li class="chip">Android Jetpack</li>
+          <li class="chip">MVVM</li>
+          <li class="chip">Firebase SDK</li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3 class="stack-row__title"><span data-lang="ru">Десктоп и автоматизация</span><span data-lang="en">Desktop and automation</span></h3>
+        <ul class="chips">
+          <li class="chip">C# · Windows Forms</li>
+          <li class="chip">Delphi</li>
+          <li class="chip"><span data-lang="ru">Автоматизация задач</span><span data-lang="en">Task automation</span></li>
+          <li class="chip"><span data-lang="ru">1С:Предприятие</span><span data-lang="en">1C:Enterprise</span></li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3 class="stack-row__title"><span data-lang="ru">Чат-боты</span><span data-lang="en">Chatbots</span></h3>
+        <ul class="chips">
+          <li class="chip">Python</li>
+          <li class="chip">Telegram Bot API</li>
+          <li class="chip">Discord</li>
+          <li class="chip">VK API</li>
+          <li class="chip"><span data-lang="ru">и другие платформы</span><span data-lang="en">and other platforms</span></li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3 class="stack-row__title"><span data-lang="ru">Базы данных</span><span data-lang="en">Databases</span></h3>
+        <ul class="chips">
+          <li class="chip">MySQL</li>
+          <li class="chip">PostgreSQL</li>
+          <li class="chip">Cloud Firestore</li>
+          <li class="chip">Firebase Realtime Database</li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3 class="stack-row__title"><span data-lang="ru">Облачные сервисы и серверы</span><span data-lang="en">Cloud services and servers</span></h3>
+        <ul class="chips">
+          <li class="chip">Cloudflare Workers, R2, KV</li>
+          <li class="chip">Firebase Authentication</li>
+          <li class="chip">Firebase Hosting</li>
+          <li class="chip">Cloudinary</li>
+          <li class="chip">Linux</li>
+          <li class="chip">VPS</li>
+          <li class="chip">Docker</li>
+          <li class="chip">Nginx</li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3 class="stack-row__title"><span data-lang="ru">Инструменты и API</span><span data-lang="en">Tools and APIs</span></h3>
+        <ul class="chips">
+          <li class="chip">Git</li>
+          <li class="chip">Leaflet</li>
+          <li class="chip">OpenStreetMap</li>
+          <li class="chip">OSRM</li>
+          <li class="chip">Nominatim</li>
+          <li class="chip">OpenRouter (LLM)</li>
+          <li class="chip">Playwright</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="path" aria-labelledby="path-title">
+    <div class="section__head">
+      <h2 class="section__title" id="path-title"><span data-lang="ru">Опыт и образование</span><span data-lang="en">Experience and education</span></h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__head">
+          <span class="timeline__when">2021–2023</span>
+          <span class="timeline__tag"><span data-lang="ru">Образование</span><span data-lang="en">Education</span></span>
+        </div>
+        <h3 class="timeline__title"><span data-lang="ru">Международная компьютерная академия ШАГ</span><span data-lang="en">IT STEP Computer Academy</span></h3>
+        <p class="timeline__text"><span data-lang="ru">Обучение по направлению «Веб-разработка»: ООП на Java, алгоритмы, MySQL. Дополнительно пройдены курсы Skillbox: «PHP-разработчик», «Git и командная разработка», «Linux».</span><span data-lang="en">Web development programme: OOP in Java, algorithms, MySQL. Also completed Skillbox courses: PHP Developer, Git and Team Development, Linux.</span></p>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__head">
+          <span class="timeline__when">2023–2026</span>
+          <span class="timeline__tag"><span data-lang="ru">Образование</span><span data-lang="en">Education</span></span>
+        </div>
+        <h3 class="timeline__title"><span data-lang="ru">Могилёвский государственный политехнический колледж</span><span data-lang="en">Mogilev State Polytechnic College</span></h3>
+        <p class="timeline__text"><span data-lang="ru">Специальность «Разработка и сопровождение программного обеспечения информационных систем».</span><span data-lang="en">Major: Software Development and Maintenance for Information Systems.</span></p>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__head">
+          <span class="timeline__when"><span data-lang="ru">3 месяца</span><span data-lang="en">3 months</span></span>
+          <span class="timeline__tag"><span data-lang="ru">Опыт</span><span data-lang="en">Experience</span></span>
+        </div>
+        <h3 class="timeline__title"><span data-lang="ru">Стажировка в компании Sotbit</span><span data-lang="en">Internship at Sotbit</span></h3>
+        <p class="timeline__text"><span data-lang="ru">Программа по PHP, Git, 1С-Битрикс и фронтенду. Практические задачи: разработка чата и парсера на PHP, интеграция дизайна в Bitrix.</span><span data-lang="en">Programme in PHP, Git, 1C-Bitrix and front-end development. Practical tasks: building a chat and a parser in PHP, integrating a design into Bitrix.</span></p>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__head">
+          <span class="timeline__when">2025</span>
+          <span class="timeline__tag"><span data-lang="ru">Опыт</span><span data-lang="en">Experience</span></span>
+        </div>
+        <h3 class="timeline__title"><span data-lang="ru">Преподаватель программирования, Международная компьютерная академия ШАГ</span><span data-lang="en">Programming Instructor, IT STEP Computer Academy</span></h3>
+        <p class="timeline__text"><span data-lang="ru">В течение двух месяцев проводил занятия по HTML, CSS и JavaScript.</span><span data-lang="en">Taught HTML, CSS and JavaScript classes for two months.</span></p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section" id="languages" aria-labelledby="languages-title">
+    <div class="section__head">
+      <h2 class="section__title" id="languages-title"><span data-lang="ru">Владение языками</span><span data-lang="en">Languages</span></h2>
+    </div>
+
+    <ul class="langs">
+      <li class="lang">
+        <span class="lang__name"><span data-lang="ru">Русский</span><span data-lang="en">Russian</span></span>
+        <span class="lang__level"><span data-lang="ru">Родной язык, уровень носителя</span><span data-lang="en">Native speaker</span></span>
+      </li>
+      <li class="lang">
+        <span class="lang__name"><span data-lang="ru">Английский</span><span data-lang="en">English</span></span>
+        <span class="lang__level"><span data-lang="ru">Технический уровень</span><span data-lang="en">Technical level</span></span>
+        <dl class="lang__skills">
+          <div>
+            <dt><span data-lang="ru">Чтение</span><span data-lang="en">Reading</span></dt>
+            <dd><span data-lang="ru">Свободно: техническая документация, профессиональные статьи, переписка</span><span data-lang="en">Fluent: technical documentation, professional articles, correspondence</span></dd>
+          </div>
+          <div>
+            <dt><span data-lang="ru">Аудирование</span><span data-lang="en">Listening</span></dt>
+            <dd><span data-lang="ru">Понимание устной речи</span><span data-lang="en">Good comprehension of spoken English</span></dd>
+          </div>
+          <div>
+            <dt><span data-lang="ru">Устная речь</span><span data-lang="en">Speaking</span></dt>
+            <dd><span data-lang="ru">Базовый уровень</span><span data-lang="en">Basic level</span></dd>
+          </div>
+        </dl>
+      </li>
+      <li class="lang">
+        <span class="lang__name"><span data-lang="ru">Польский</span><span data-lang="en">Polish</span></span>
+        <span class="lang__level"><span data-lang="ru">Разговорный уровень</span><span data-lang="en">Conversational level</span></span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="contact-card">
+      <h2 class="section__title" id="contact-title"><span data-lang="ru">Контакты</span><span data-lang="en">Contact</span></h2>
+      <p class="contact-card__text"><span data-lang="ru">Рассматриваю предложения о работе и сотрудничестве. Наиболее быстрый способ связи — Telegram.</span><span data-lang="en">Open to job offers and collaboration. Telegram is the fastest way to reach me.</span></p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="https://t.me/thefulum" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>
+          Telegram: @thefulum
+        </a>
+        <a class="btn" href="mailto:lipouski.daniil@gmail.com">
+          <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+          lipouski.daniil@gmail.com
+        </a>
+        <a class="btn" href="tel:+375445141790">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+          +375 44 514-17-90
+        </a>
+        <a class="btn" href="https://github.com/TheFulum" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p>© <span id="year">2026</span> <span data-lang="ru">Липовский Даниил</span><span data-lang="en">Daniil Lipouski</span></p>
+    <a href="#top"><span data-lang="ru">Наверх ↑</span><span data-lang="en">Back to top ↑</span></a>
+  </div>
+</footer>
+
+</body>
+</html>
