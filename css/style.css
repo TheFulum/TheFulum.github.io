@@ -907,6 +907,74 @@ html[lang="en"] [data-lang="ru"] {
 }
 
 
+.jobs {
+  display: grid;
+  gap: 20px;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 32px;
+  padding: clamp(22px, 3vw, 32px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color 0.25s, box-shadow 0.25s, var(--reveal);
+}
+
+.job:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.job__period {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.job__dates {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.job__duration {
+  align-self: flex-start;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--tint-honey);
+  font-size: 13px;
+}
+
+.job__company {
+  font-size: clamp(18px, 2vw, 21px);
+}
+
+.job__role {
+  margin-top: 4px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.job__label {
+  margin: 18px 0 8px;
+  color: var(--mute);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.job .bullets {
+  font-size: 15px;
+}
+
+.job .chips {
+  margin-top: 20px;
+}
+
+
 .timeline {
   padding-left: 28px;
   border-left: 3px solid var(--line);
@@ -1102,6 +1170,18 @@ html[lang="en"] [data-lang="ru"] {
   .stack-row {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .job {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .job__period {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 12px;
   }
 
   .langs {

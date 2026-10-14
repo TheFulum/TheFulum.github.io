@@ -217,7 +217,7 @@
   function initReveal() {
     if (reducedMotion || !canObserve) return;
 
-    const items = document.querySelectorAll('.featured, .card, .stack-row, .timeline__item, .lang, .contact-card');
+    const items = document.querySelectorAll('.featured, .card, .job, .stack-row, .timeline__item, .lang, .contact-card');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
