@@ -123,16 +123,21 @@
   }
 
   function initProjects() {
-    const PAGE_SIZE = 6;
     const panel = document.getElementById('project-filters');
     const pager = document.getElementById('project-pagination');
     const status = document.getElementById('filter-status');
+    const grid = document.getElementById('project-grid');
     const cards = [...document.querySelectorAll('#project-grid [data-category]')];
-    if (!panel || !pager || !cards.length) return;
+    if (!panel || !pager || !grid || !cards.length) return;
+
+    const pageSize = () => {
+      const columns = getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length;
+      return columns > 1 ? 6 : 4;
+    };
 
     const buttons = [...panel.querySelectorAll('[data-filter]')];
     const matches = (card, filter) => filter === 'all' || card.dataset.category === filter;
-    const state = { filter: 'all', page: 1 };
+    const state = { filter: 'all', page: 1, size: pageSize() };
 
     const pageButton = (label, page, { current = false, disabled = false, ariaLabel } = {}) => {
       const button = document.createElement('button');
@@ -164,10 +169,10 @@
 
     const render = () => {
       const visible = cards.filter((card) => matches(card, state.filter));
-      const pages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+      const pages = Math.max(1, Math.ceil(visible.length / state.size));
       state.page = Math.min(state.page, pages);
-      const start = (state.page - 1) * PAGE_SIZE;
-      const shown = new Set(visible.slice(start, start + PAGE_SIZE));
+      const start = (state.page - 1) * state.size;
+      const shown = new Set(visible.slice(start, start + state.size));
 
       cards.forEach((card) => { card.hidden = !shown.has(card); });
       renderPager(pages);
@@ -187,6 +192,19 @@
         buttons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
         state.filter = filter;
         state.page = 1;
+        render();
+      });
+    });
+
+    let resizeFrame = 0;
+    window.addEventListener('resize', () => {
+      cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(() => {
+        const size = pageSize();
+        if (size === state.size) return;
+        const firstIndex = (state.page - 1) * state.size;
+        state.size = size;
+        state.page = Math.floor(firstIndex / size) + 1;
         render();
       });
     });
