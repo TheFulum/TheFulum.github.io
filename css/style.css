@@ -372,7 +372,27 @@ html[lang="en"] [data-lang="ru"] {
 }
 
 .alt-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
   margin-top: 16px;
+  color: var(--mute);
+  font-size: 15px;
+}
+
+.alt-link .link {
+  gap: 4px;
+}
+
+.alt-link__group {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.alt-link .icon {
+  width: 14px;
+  height: 14px;
 }
 
 .chips {
@@ -1205,6 +1225,15 @@ html[lang="en"] [data-lang="ru"] {
 
   .route {
     display: none;
+  }
+
+  .alt-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .alt-link__group {
+    gap: 18px;
   }
 
   .hero__facts {
