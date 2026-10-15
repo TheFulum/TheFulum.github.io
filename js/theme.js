@@ -1,6 +1,6 @@
 (function () {
   var STORAGE_KEY = 'theme';
-  var THEME_COLORS = { light: '#f9edd2', dark: '#161513' };
+  var THEME_COLORS = { light: '#ecebe6', dark: '#141311' };
   var root = document.documentElement;
   var systemDark = window.matchMedia('(prefers-color-scheme: dark)');
 
