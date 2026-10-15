@@ -371,6 +371,10 @@ html[lang="en"] [data-lang="ru"] {
   height: 16px;
 }
 
+.alt-link {
+  margin-top: 16px;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
