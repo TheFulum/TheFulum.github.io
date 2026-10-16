@@ -1290,37 +1290,19 @@ html[lang="en"] [data-lang="ru"] {
   }
 
   .route-wrap {
-    margin: 8px -16px 0;
-    padding: 8px 16px 0;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .route-wrap::-webkit-scrollbar {
-    display: none;
+    margin-top: 8px;
   }
 
   .route {
-    width: 500px;
-    max-width: none;
+    width: 100%;
   }
 
   .route__pin text {
-    font-size: 15px;
+    font-size: 13.5px;
   }
 
   .route__sub {
-    font-size: 12px;
-  }
-
-  .route-hint {
-    display: block;
-    position: sticky;
-    left: 0;
-    margin-top: 12px;
-    color: var(--mute);
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .alt-link {
