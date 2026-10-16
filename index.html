@@ -100,7 +100,8 @@
     <div>
       <ul class="hero__meta">
         <li class="hero__status"><span data-lang="ru">Открыт к предложениям</span><span data-lang="en">Open to offers</span></li>
-        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-lang="ru">Беларусь</span><span data-lang="en">Belarus</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-lang="ru">Бобруйск, Беларусь</span><span data-lang="en">Babruysk, Belarus</span></li>
+        <li><span data-lang="ru">Готов к переезду и удалённой работе</span><span data-lang="en">Open to relocation and remote work</span></li>
         <li>
           <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
           <span><span data-lang="ru">Дата рождения: </span><span data-lang="en">Date of birth: </span><time datetime="2005-06-20" id="birth-date"><span data-lang="ru">20.06.2005</span><span data-lang="en">20 June 2005</span></time><span id="age"></span></span>
@@ -277,22 +278,16 @@
         <p class="card__type"><span data-lang="ru">Веб-сайт</span><span data-lang="en">Website</span></p>
         <h3 class="card__title">BelarusHeritage</h3>
         <p><span data-lang="ru">Информационный сайт о культурном наследии Беларуси.</span><span data-lang="en">An information website about the cultural heritage of Belarus.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Каталог объектов, интерактивная карта, хронология событий, викторины.</span><span data-lang="en">Heritage catalogue, interactive map, timeline of events, quizzes.</span></li>
-          <li><span data-lang="ru">Конструктор маршрутов по дорогам с выбором альтернатив и оптимизацией, конструктор орнаментов.</span><span data-lang="en">Road route builder with alternative paths and optimisation, ornament builder.</span></li>
-          <li><span data-lang="ru">Разграничение ролей, панель администратора с журналом действий, интерфейс на трёх языках.</span><span data-lang="en">Role-based access, admin panel with an audit log, interface in three languages.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">ASP.NET Core 8 MVC</li>
-            <li class="chip">EF Core</li>
-            <li class="chip"><span data-lang="ru">MySQL, 32 таблицы</span><span data-lang="en">MySQL, 32 tables</span></li>
-            <li class="chip">Identity + JWT</li>
-            <li class="chip">jQuery</li>
-            <li class="chip">Bootstrap</li>
-            <li class="chip">Leaflet</li>
-            <li class="chip">MapLibre</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Каталог объектов, интерактивная карта, хронология событий, викторины.</span><span data-lang="en">Heritage catalogue, interactive map, timeline of events, quizzes.</span></li>
+            <li><span data-lang="ru">Конструктор маршрутов по дорогам с выбором альтернатив и оптимизацией, конструктор орнаментов.</span><span data-lang="en">Road route builder with alternative paths and optimisation, ornament builder.</span></li>
+            <li><span data-lang="ru">Разграничение ролей, панель администратора с журналом действий, интерфейс на трёх языках.</span><span data-lang="en">Role-based access, admin panel with an audit log, interface in three languages.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">ASP.NET Core 8 MVC, EF Core, <span data-lang="ru">MySQL, 32 таблицы</span><span data-lang="en">MySQL, 32 tables</span>, Identity + JWT, jQuery, Bootstrap, Leaflet, MapLibre</p>
           <div class="card__links">
             <a class="link" href="https://github.com/TheFulum/BelarusHeritage" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
@@ -305,18 +300,16 @@
         <p class="card__type"><span data-lang="ru">Коммерческий проект</span><span data-lang="en">Commercial project</span></p>
         <h3 class="card__title"><span data-lang="ru">Дари радость</span><span data-lang="en">Dari Radost</span></h3>
         <p><span data-lang="ru">Каталог идей для подарков: сертификаты на услуги и впечатления от компаний-партнёров.</span><span data-lang="en">A gift ideas catalogue: service and experience certificates from partner companies.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Каталог идей с поиском, разделы проектов партнёров, услуг и проката.</span><span data-lang="en">Ideas catalogue with search, plus sections for partner projects, services and rentals.</span></li>
-          <li><span data-lang="ru">Блог «Идеи и вдохновение», формы обратной связи и заявок.</span><span data-lang="en">An "Ideas and Inspiration" blog, feedback and request forms.</span></li>
-          <li><span data-lang="ru">Разработан самостоятельно по заказу клиента, сайт работает.</span><span data-lang="en">Built single-handedly for a client; the website is live.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">WordPress</li>
-            <li class="chip">WooCommerce</li>
-            <li class="chip">Elementor</li>
-            <li class="chip">Contact Form 7</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Каталог идей с поиском, разделы проектов партнёров, услуг и проката.</span><span data-lang="en">Ideas catalogue with search, plus sections for partner projects, services and rentals.</span></li>
+            <li><span data-lang="ru">Блог «Идеи и вдохновение», формы обратной связи и заявок.</span><span data-lang="en">An "Ideas and Inspiration" blog, feedback and request forms.</span></li>
+            <li><span data-lang="ru">Разработан самостоятельно по заказу клиента, сайт работает.</span><span data-lang="en">Built single-handedly for a client; the website is live.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">WordPress, WooCommerce, Elementor, Contact Form 7</p>
           <div class="card__links">
             <a class="link" href="https://dari-radost.by/" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>dari-radost.by
@@ -329,17 +322,16 @@
         <p class="card__type"><span data-lang="ru">Коммерческий проект</span><span data-lang="en">Commercial project</span></p>
         <h3 class="card__title">Mirno.by</h3>
         <p><span data-lang="ru">Сайт службы медиации: урегулирование споров без обращения в суд.</span><span data-lang="en">A mediation service website: resolving disputes out of court.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Направления работы медиаторов, каталог специалистов, статьи.</span><span data-lang="en">Mediators' practice areas, specialist directory, articles.</span></li>
-          <li><span data-lang="ru">Подбор медиатора и заказ обратного звонка с защитой reCAPTCHA.</span><span data-lang="en">Mediator selection and callback requests protected by reCAPTCHA.</span></li>
-          <li><span data-lang="ru">Разработан самостоятельно по заказу клиента, сайт работает.</span><span data-lang="en">Built single-handedly for a client; the website is live.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">WordPress</li>
-            <li class="chip">Slider Revolution</li>
-            <li class="chip"><span data-lang="ru">Яндекс Метрика</span><span data-lang="en">Yandex Metrica</span></li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Направления работы медиаторов, каталог специалистов, статьи.</span><span data-lang="en">Mediators' practice areas, specialist directory, articles.</span></li>
+            <li><span data-lang="ru">Подбор медиатора и заказ обратного звонка с защитой reCAPTCHA.</span><span data-lang="en">Mediator selection and callback requests protected by reCAPTCHA.</span></li>
+            <li><span data-lang="ru">Разработан самостоятельно по заказу клиента, сайт работает.</span><span data-lang="en">Built single-handedly for a client; the website is live.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">WordPress, Slider Revolution, <span data-lang="ru">Яндекс Метрика</span><span data-lang="en">Yandex Metrica</span></p>
           <div class="card__links">
             <a class="link" href="https://mirno.by/" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>mirno.by
@@ -352,19 +344,16 @@
         <p class="card__type"><span data-lang="ru">Проекты по ТЗ</span><span data-lang="en">Client projects</span></p>
         <h3 class="card__title"><span data-lang="ru">Веб-приложения на заказ</span><span data-lang="en">Web applications for clients</span></h3>
         <p><span data-lang="ru">Интернет-магазин музыкальных инструментов и сервис заказа кейтеринга, разработанные по техническим заданиям заказчиков.</span><span data-lang="en">An online musical instrument store and a catering ordering service, built to client specifications.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Каталог, карточка товара, корзина и оформление заказа.</span><span data-lang="en">Catalogue, product page, cart and checkout.</span></li>
-          <li><span data-lang="ru">Регистрация и вход с хешированием паролей BCrypt.</span><span data-lang="en">Sign-up and sign-in with BCrypt password hashing.</span></li>
-          <li><span data-lang="ru">Панель администратора: товары, пользователи и заказы.</span><span data-lang="en">Admin panel for products, users and orders.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">ASP.NET Core MVC</li>
-            <li class="chip">EF Core</li>
-            <li class="chip">MySQL</li>
-            <li class="chip">BCrypt</li>
-            <li class="chip">Bootstrap</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Каталог, карточка товара, корзина и оформление заказа.</span><span data-lang="en">Catalogue, product page, cart and checkout.</span></li>
+            <li><span data-lang="ru">Регистрация и вход с хешированием паролей BCrypt.</span><span data-lang="en">Sign-up and sign-in with BCrypt password hashing.</span></li>
+            <li><span data-lang="ru">Панель администратора: товары, пользователи и заказы.</span><span data-lang="en">Admin panel for products, users and orders.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">ASP.NET Core MVC, EF Core, MySQL, BCrypt, Bootstrap</p>
           <p class="card__note"><span data-lang="ru">Исходный код принадлежит заказчикам.</span><span data-lang="en">Source code belongs to the clients.</span></p>
         </div>
       </article>
@@ -373,21 +362,16 @@
         <p class="card__type"><span data-lang="ru">Android и веб</span><span data-lang="en">Android and web</span></p>
         <h3 class="card__title">Time2Help</h3>
         <p><span data-lang="ru">Платформа для волонтёров и организаторов мероприятий.</span><span data-lang="en">A platform for volunteers and event organisers.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Мероприятия, заявки волонтёров, регулярные еженедельные серии.</span><span data-lang="en">Events, volunteer applications, recurring weekly series.</span></li>
-          <li><span data-lang="ru">Отметка участников по QR-коду, календарь с напоминаниями, рейтинги волонтёров.</span><span data-lang="en">QR check-in for participants, calendar with reminders, volunteer ratings.</span></li>
-          <li><span data-lang="ru">Личные и групповые чаты, веб-панель администратора.</span><span data-lang="en">Private and group chats, web admin panel.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">Java</li>
-            <li class="chip">MVVM</li>
-            <li class="chip">Firebase Authentication</li>
-            <li class="chip">Cloud Firestore</li>
-            <li class="chip">Cloudinary</li>
-            <li class="chip">osmdroid</li>
-            <li class="chip">ZXing</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Мероприятия, заявки волонтёров, регулярные еженедельные серии.</span><span data-lang="en">Events, volunteer applications, recurring weekly series.</span></li>
+            <li><span data-lang="ru">Отметка участников по QR-коду, календарь с напоминаниями, рейтинги волонтёров.</span><span data-lang="en">QR check-in for participants, calendar with reminders, volunteer ratings.</span></li>
+            <li><span data-lang="ru">Личные и групповые чаты, веб-панель администратора.</span><span data-lang="en">Private and group chats, web admin panel.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">Java, MVVM, Firebase Authentication, Cloud Firestore, Cloudinary, osmdroid, ZXing</p>
           <div class="card__links">
             <a class="link" href="https://github.com/TheFulum/-time2help.app" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Приложение</span><span data-lang="en">App</span>
@@ -403,22 +387,16 @@
         <p class="card__type">Android</p>
         <h3 class="card__title"><span data-lang="ru">Мой город</span><span data-lang="en">My City</span></h3>
         <p><span data-lang="ru">Городская платформа для жителей Могилёва: обращения о проблемах, новости и общественный транспорт.</span><span data-lang="en">A city platform for Mogilev residents: issue reports, news and public transport.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Обращения с фотографиями и геометкой, комментарии, модерация администратором.</span><span data-lang="en">Issue reports with photos and geotags, comments, admin moderation.</span></li>
-          <li><span data-lang="ru">Новостная лента из RSS-источников с фоновым обновлением.</span><span data-lang="en">News feed from RSS sources with background updates.</span></li>
-          <li><span data-lang="ru">Маршруты и остановки транспорта, данные для которых собирает парсер на Node.js.</span><span data-lang="en">Transport routes and stops, with data collected by a Node.js scraper.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">Java</li>
-            <li class="chip">Firebase Authentication</li>
-            <li class="chip">Cloud Firestore</li>
-            <li class="chip">Cloudinary</li>
-            <li class="chip">osmdroid</li>
-            <li class="chip">Retrofit</li>
-            <li class="chip">WorkManager</li>
-            <li class="chip">Node.js</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Обращения с фотографиями и геометкой, комментарии, модерация администратором.</span><span data-lang="en">Issue reports with photos and geotags, comments, admin moderation.</span></li>
+            <li><span data-lang="ru">Новостная лента из RSS-источников с фоновым обновлением.</span><span data-lang="en">News feed from RSS sources with background updates.</span></li>
+            <li><span data-lang="ru">Маршруты и остановки транспорта, данные для которых собирает парсер на Node.js.</span><span data-lang="en">Transport routes and stops, with data collected by a Node.js scraper.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">Java, Firebase Authentication, Cloud Firestore, Cloudinary, osmdroid, Retrofit, WorkManager, Node.js</p>
           <div class="card__links">
             <a class="link" href="https://github.com/TheFulum/mycity" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
@@ -431,20 +409,16 @@
         <p class="card__type"><span data-lang="ru">Веб-сайт</span><span data-lang="en">Website</span></p>
         <h3 class="card__title">WholesaleShop</h3>
         <p><span data-lang="ru">Интернет-магазин с оптовыми ценами и пунктами самовывоза.</span><span data-lang="en">An online store with wholesale pricing and pickup points.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Каталог, корзина, оформление и отслеживание заказов, оценки товаров.</span><span data-lang="en">Catalogue, cart, checkout and order tracking, product ratings.</span></li>
-          <li><span data-lang="ru">Оптовые ценовые уровни и заявки на получение оптового статуса.</span><span data-lang="en">Wholesale price tiers and applications for wholesale status.</span></li>
-          <li><span data-lang="ru">Панель администратора, отчёты по заказам с экспортом в Excel.</span><span data-lang="en">Admin panel and order reports with Excel export.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">ASP.NET Core 8 MVC</li>
-            <li class="chip">EF Core</li>
-            <li class="chip">MySQL</li>
-            <li class="chip">BCrypt</li>
-            <li class="chip">ClosedXML</li>
-            <li class="chip">Chart.js</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Каталог, корзина, оформление и отслеживание заказов, оценки товаров.</span><span data-lang="en">Catalogue, cart, checkout and order tracking, product ratings.</span></li>
+            <li><span data-lang="ru">Оптовые ценовые уровни и заявки на получение оптового статуса.</span><span data-lang="en">Wholesale price tiers and applications for wholesale status.</span></li>
+            <li><span data-lang="ru">Панель администратора, отчёты по заказам с экспортом в Excel.</span><span data-lang="en">Admin panel and order reports with Excel export.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">ASP.NET Core 8 MVC, EF Core, MySQL, BCrypt, ClosedXML, Chart.js</p>
           <div class="card__links">
             <a class="link" href="https://github.com/TheFulum/WholesaleShop" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
@@ -457,19 +431,16 @@
         <p class="card__type">Android</p>
         <h3 class="card__title">Poligram</h3>
         <p><span data-lang="ru">Мессенджер с обменом медиафайлами.</span><span data-lang="en">A messenger with media sharing.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Фотографии, видео, документы и голосовые сообщения.</span><span data-lang="en">Photos, videos, documents and voice messages.</span></li>
-          <li><span data-lang="ru">Ответы, пересылка и редактирование сообщений, статусы прочтения.</span><span data-lang="en">Replies, forwarding and message editing, read receipts.</span></li>
-          <li><span data-lang="ru">Статус «в сети», блокировка пользователей, уведомления о новых сообщениях.</span><span data-lang="en">Online status, user blocking, new message notifications.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">Java</li>
-            <li class="chip">Firebase Realtime Database</li>
-            <li class="chip">Firebase Authentication</li>
-            <li class="chip">Cloudinary</li>
-            <li class="chip">ExoPlayer</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Фотографии, видео, документы и голосовые сообщения.</span><span data-lang="en">Photos, videos, documents and voice messages.</span></li>
+            <li><span data-lang="ru">Ответы, пересылка и редактирование сообщений, статусы прочтения.</span><span data-lang="en">Replies, forwarding and message editing, read receipts.</span></li>
+            <li><span data-lang="ru">Статус «в сети», блокировка пользователей, уведомления о новых сообщениях.</span><span data-lang="en">Online status, user blocking, new message notifications.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">Java, Firebase Realtime Database, Firebase Authentication, Cloudinary, ExoPlayer</p>
           <div class="card__links">
             <a class="link" href="https://github.com/TheFulum/AndroidMessenger" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
@@ -482,18 +453,16 @@
         <p class="card__type">Android</p>
         <h3 class="card__title">OwnTest</h3>
         <p><span data-lang="ru">Платформа для создания и прохождения тестов.</span><span data-lang="en">A platform for creating and taking tests.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Конструктор тестов с несколькими типами вопросов и начислением баллов.</span><span data-lang="en">Test builder with several question types and scoring.</span></li>
-          <li><span data-lang="ru">Автоматическая и ручная проверка ответов, повторные попытки.</span><span data-lang="en">Automatic and manual answer review, repeat attempts.</span></li>
-          <li><span data-lang="ru">Рейтинг тестов, история прохождений, уведомления.</span><span data-lang="en">Test ratings, attempt history, notifications.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">Java</li>
-            <li class="chip">Firebase Realtime Database</li>
-            <li class="chip">Firebase Authentication</li>
-            <li class="chip">Cloudinary</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Конструктор тестов с несколькими типами вопросов и начислением баллов.</span><span data-lang="en">Test builder with several question types and scoring.</span></li>
+            <li><span data-lang="ru">Автоматическая и ручная проверка ответов, повторные попытки.</span><span data-lang="en">Automatic and manual answer review, repeat attempts.</span></li>
+            <li><span data-lang="ru">Рейтинг тестов, история прохождений, уведомления.</span><span data-lang="en">Test ratings, attempt history, notifications.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">Java, Firebase Realtime Database, Firebase Authentication, Cloudinary</p>
           <div class="card__links">
             <a class="link" href="https://github.com/TheFulum/OwnTest" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
@@ -506,18 +475,16 @@
         <p class="card__type">Android</p>
         <h3 class="card__title">FamilyHelper</h3>
         <p><span data-lang="ru">Планировщик семейных задач.</span><span data-lang="en">A family task planner.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Создание семьи и приглашение участников.</span><span data-lang="en">Creating a family and inviting members.</span></li>
-          <li><span data-lang="ru">Задачи с приоритетами, сроками и отметкой о выполнении.</span><span data-lang="en">Tasks with priorities, due dates and completion marks.</span></li>
-          <li><span data-lang="ru">Комментарии к задачам, профили участников.</span><span data-lang="en">Task comments and member profiles.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">Java</li>
-            <li class="chip">Firebase Authentication</li>
-            <li class="chip">Cloud Firestore</li>
-            <li class="chip">Cloudinary</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Создание семьи и приглашение участников.</span><span data-lang="en">Creating a family and inviting members.</span></li>
+            <li><span data-lang="ru">Задачи с приоритетами, сроками и отметкой о выполнении.</span><span data-lang="en">Tasks with priorities, due dates and completion marks.</span></li>
+            <li><span data-lang="ru">Комментарии к задачам, профили участников.</span><span data-lang="en">Task comments and member profiles.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">Java, Firebase Authentication, Cloud Firestore, Cloudinary</p>
           <div class="card__links">
             <a class="link" href="https://github.com/TheFulum/Family-Helper" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
@@ -530,20 +497,16 @@
         <p class="card__type"><span data-lang="ru">Проекты по ТЗ</span><span data-lang="en">Client projects</span></p>
         <h3 class="card__title"><span data-lang="ru">Десктопные приложения на заказ</span><span data-lang="en">Desktop applications for clients</span></h3>
         <p><span data-lang="ru">Приложения с базами данных, разработанные по техническим заданиям заказчиков: 11 программ на Delphi и админ-панель на C#.</span><span data-lang="en">Database-driven applications built to client specifications: 11 Delphi programs and a C# admin panel.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Учёт и сервисы: агентство недвижимости, запись на приём к врачу, гарантийный отдел компьютерного магазина, учёт посещаемости с кодами входа.</span><span data-lang="en">Records and services: a real estate agency, doctor appointments, a computer store warranty desk, attendance tracking with sign-in codes.</span></li>
-          <li><span data-lang="ru">Магазины и склады: спортивное питание, музыкальные инструменты, автозапчасти, склад с фильтрами по цене и сроку годности.</span><span data-lang="en">Stores and warehouses: sports nutrition, musical instruments, car parts, a warehouse with price and expiry date filters.</span></li>
-          <li><span data-lang="ru">Дневник питания с подсчётом хлебных единиц, игра-викторина о Беларуси, админ-панель базы данных бота-викторины.</span><span data-lang="en">A food diary with bread unit counting, a quiz game about Belarus, an admin panel for a quiz bot database.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">Delphi</li>
-            <li class="chip">VCL</li>
-            <li class="chip">ADO</li>
-            <li class="chip">C#</li>
-            <li class="chip">Windows Forms</li>
-            <li class="chip">MySQL</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Учёт и сервисы: агентство недвижимости, запись на приём к врачу, гарантийный отдел компьютерного магазина, учёт посещаемости с кодами входа.</span><span data-lang="en">Records and services: a real estate agency, doctor appointments, a computer store warranty desk, attendance tracking with sign-in codes.</span></li>
+            <li><span data-lang="ru">Магазины и склады: спортивное питание, музыкальные инструменты, автозапчасти, склад с фильтрами по цене и сроку годности.</span><span data-lang="en">Stores and warehouses: sports nutrition, musical instruments, car parts, a warehouse with price and expiry date filters.</span></li>
+            <li><span data-lang="ru">Дневник питания с подсчётом хлебных единиц, игра-викторина о Беларуси, админ-панель базы данных бота-викторины.</span><span data-lang="en">A food diary with bread unit counting, a quiz game about Belarus, an admin panel for a quiz bot database.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">Delphi, VCL, ADO, C#, Windows Forms, MySQL</p>
           <p class="card__note"><span data-lang="ru">Исходный код принадлежит заказчикам.</span><span data-lang="en">Source code belongs to the clients.</span></p>
         </div>
       </article>
@@ -552,17 +515,15 @@
         <p class="card__type"><span data-lang="ru">Стажировка Sotbit</span><span data-lang="en">Sotbit internship</span></p>
         <h3 class="card__title"><span data-lang="ru">Чат и парсер на PHP</span><span data-lang="en">PHP chat and parser</span></h3>
         <p><span data-lang="ru">Практические задания стажировки в компании Sotbit.</span><span data-lang="en">Hands-on assignments from an internship at Sotbit.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Чат на чистом PHP с собственным слоем моделей, учётными записями и передачей файлов. После сдачи выполнена оптимизация.</span><span data-lang="en">A chat in plain PHP with a custom model layer, user accounts and file sharing, optimised after delivery.</span></li>
-          <li><span data-lang="ru">Парсер Excel-файлов на PHP с использованием PhpSpreadsheet.</span><span data-lang="en">An Excel file parser in PHP built with PhpSpreadsheet.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">PHP</li>
-            <li class="chip">JavaScript</li>
-            <li class="chip">Composer</li>
-            <li class="chip">PhpSpreadsheet</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Чат на чистом PHP с собственным слоем моделей, учётными записями и передачей файлов. После сдачи выполнена оптимизация.</span><span data-lang="en">A chat in plain PHP with a custom model layer, user accounts and file sharing, optimised after delivery.</span></li>
+            <li><span data-lang="ru">Парсер Excel-файлов на PHP с использованием PhpSpreadsheet.</span><span data-lang="en">An Excel file parser in PHP built with PhpSpreadsheet.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">PHP, JavaScript, Composer, PhpSpreadsheet</p>
           <div class="card__links">
             <a class="link" href="https://github.com/TheFulum/Chat" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Чат</span><span data-lang="en">Chat</span>
@@ -574,48 +535,20 @@
         </div>
       </article>
 
-      <article class="card" data-category="web">
-        <p class="card__type"><span data-lang="ru">По заказу преподавателя</span><span data-lang="en">For a college teacher</span></p>
-        <h3 class="card__title"><span data-lang="ru">Тренажёр по плану счетов</span><span data-lang="en">Chart of accounts trainer</span></h3>
-        <p><span data-lang="ru">Веб-приложение для проверки знаний плана счетов бухгалтерского учёта, разработанное для преподавателя колледжа.</span><span data-lang="en">A web app for testing knowledge of the accounting chart of accounts, built for a college teacher.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Создан для конкурса и для проверки знаний студентов на занятиях.</span><span data-lang="en">Made for a competition and for testing students in class.</span></li>
-          <li><span data-lang="ru">Тестирование с отдельной страницей результатов и страницей администратора.</span><span data-lang="en">Tests with a separate results page and an admin page.</span></li>
-          <li><span data-lang="ru">Работает без серверной части: вопросы хранятся в JSON, сайт опубликован на GitHub Pages.</span><span data-lang="en">Runs without a back end: questions are stored in JSON and the site is published on GitHub Pages.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">HTML</li>
-            <li class="chip">CSS</li>
-            <li class="chip">JavaScript</li>
-          </ul>
-          <div class="card__links">
-            <a class="link" href="https://thefulum.github.io/accounting-quiz/" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg><span data-lang="ru">Открыть</span><span data-lang="en">Open</span>
-            </a>
-            <a class="link" href="https://github.com/TheFulum/accounting-quiz" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
-            </a>
-          </div>
-        </div>
-      </article>
-
       <article class="card" data-category="tools">
         <p class="card__type"><span data-lang="ru">Инструмент</span><span data-lang="en">Tool</span></p>
         <h3 class="card__title">Site Cloner</h3>
         <p><span data-lang="ru">Консольная утилита для сохранения сайтов и их офлайн-просмотра, включая сайты на WebGL.</span><span data-lang="en">A command-line tool that saves websites for offline viewing, including WebGL sites.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Перехват всех сетевых ответов в headless Chromium и обход страниц до заданной глубины.</span><span data-lang="en">Captures every network response in headless Chromium and crawls pages to a set depth.</span></li>
-          <li><span data-lang="ru">Имитация действий пользователя для запуска WebGL и анимаций.</span><span data-lang="en">Simulates user actions to start WebGL scenes and animations.</span></li>
-          <li><span data-lang="ru">Докачка пропущенных файлов за несколько проходов через локальный сервер.</span><span data-lang="en">Downloads missing files in several passes through a local server.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">TypeScript</li>
-            <li class="chip">Node.js</li>
-            <li class="chip">Playwright</li>
-            <li class="chip">Cheerio</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Перехват всех сетевых ответов в headless Chromium и обход страниц до заданной глубины.</span><span data-lang="en">Captures every network response in headless Chromium and crawls pages to a set depth.</span></li>
+            <li><span data-lang="ru">Имитация действий пользователя для запуска WebGL и анимаций.</span><span data-lang="en">Simulates user actions to start WebGL scenes and animations.</span></li>
+            <li><span data-lang="ru">Докачка пропущенных файлов за несколько проходов через локальный сервер.</span><span data-lang="en">Downloads missing files in several passes through a local server.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">TypeScript, Node.js, Playwright, Cheerio</p>
           <p class="card__note"><span data-lang="ru">Исходный код не опубликован.</span><span data-lang="en">Source code is not published.</span></p>
         </div>
       </article>
@@ -624,17 +557,15 @@
         <p class="card__type"><span data-lang="ru">Инфраструктура</span><span data-lang="en">Infrastructure</span></p>
         <h3 class="card__title"><span data-lang="ru">Собственный VPN-сервер</span><span data-lang="en">Personal VPN server</span></h3>
         <p><span data-lang="ru">Самостоятельное развёртывание и настройка VPN-сервера на VPS.</span><span data-lang="en">Deployed and configured a VPN server on a VPS on my own.</span></p>
-        <ul class="bullets">
-          <li><span data-lang="ru">Настройка сервера на Linux и панели управления 3X-UI.</span><span data-lang="en">Linux server and 3X-UI control panel setup.</span></li>
-          <li><span data-lang="ru">Протокол VLESS + Reality, подключение клиентских устройств.</span><span data-lang="en">VLESS + Reality protocol and client device setup.</span></li>
-        </ul>
-        <div class="card__bottom">
-          <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
-            <li class="chip">Linux</li>
-            <li class="chip">VPS</li>
-            <li class="chip">3X-UI</li>
-            <li class="chip">VLESS + Reality</li>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <ul class="bullets">
+            <li><span data-lang="ru">Настройка сервера на Linux и панели управления 3X-UI.</span><span data-lang="en">Linux server and 3X-UI control panel setup.</span></li>
+            <li><span data-lang="ru">Протокол VLESS + Reality, подключение клиентских устройств.</span><span data-lang="en">VLESS + Reality protocol and client device setup.</span></li>
           </ul>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">Linux, VPS, 3X-UI, VLESS + Reality</p>
           <p class="card__note"><span data-lang="ru">Личная инфраструктура.</span><span data-lang="en">Personal infrastructure.</span></p>
         </div>
       </article>
@@ -817,6 +748,7 @@
           <li class="chip">PostgreSQL</li>
           <li class="chip">Cloud Firestore</li>
           <li class="chip">Firebase Realtime Database</li>
+          <li class="chip">MS SQL Server</li>
         </ul>
       </div>
       <div class="stack-row">
@@ -842,6 +774,8 @@
           <li class="chip">Nominatim</li>
           <li class="chip">OpenRouter (LLM)</li>
           <li class="chip">Playwright</li>
+          <li class="chip">Cursor</li>
+          <li class="chip">Claude Code</li>
         </ul>
       </div>
     </div>
@@ -918,7 +852,7 @@
   <section class="section" id="contact" aria-labelledby="contact-title">
     <div class="contact-card">
       <h2 class="section__title" id="contact-title"><span data-lang="ru">Контакты</span><span data-lang="en">Contact</span></h2>
-      <p class="contact-card__text"><span data-lang="ru">Рассматриваю предложения о работе и сотрудничестве. Наиболее быстрый способ связи — Telegram.</span><span data-lang="en">Open to job offers and collaboration. Telegram is the fastest way to reach me.</span></p>
+      <p class="contact-card__text"><span data-lang="ru">Рассматриваю работу удалённо или в офисе с переездом: в Минск, Могилёв, Гомель или другой город. Быстрее всего отвечаю в Telegram.</span><span data-lang="en">Open to remote work or an office job with relocation to Minsk, Mogilev, Gomel or another city. Telegram is the fastest way to reach me.</span></p>
       <div class="btn-row">
         <a class="btn btn--primary" href="https://t.me/thefulum" target="_blank" rel="noopener">
           <svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>

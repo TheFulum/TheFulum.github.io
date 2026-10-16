@@ -790,24 +790,71 @@ html[lang="en"] [data-lang="ru"] {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 310px), 1fr));
-  gap: 20px;
+  align-items: start;
+  gap: 16px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 24px;
+  gap: 8px;
+  padding: 20px 22px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
-  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s, var(--reveal);
+  transition: border-color 0.2s ease, var(--reveal);
 }
 
 .card:hover {
   border-color: var(--accent);
-  box-shadow: var(--shadow);
-  transform: translateY(-3px);
+}
+
+.card > p:not(.card__type) {
+  font-size: 15.5px;
+  line-height: 1.5;
+}
+
+.card__more summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+}
+
+.card__more summary::-webkit-details-marker {
+  display: none;
+}
+
+.card__more summary::before {
+  content: "+";
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  font-size: 15px;
+  line-height: 1;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card__more[open] summary::before {
+  transform: rotate(45deg);
+}
+
+.card__more .bullets {
+  margin-top: 6px;
+}
+
+.card__stack {
+  color: var(--mute);
+  font-size: 13.5px;
+  line-height: 1.5;
 }
 
 .card__type {
@@ -838,7 +885,7 @@ html[lang="en"] [data-lang="ru"] {
 [data-category="tools"] .card__type::before { background: var(--dot-tools); }
 
 .card__title {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .card .bullets {
@@ -848,8 +895,7 @@ html[lang="en"] [data-lang="ru"] {
 
 .card__bottom {
   display: grid;
-  gap: 16px;
-  margin-top: auto;
+  gap: 12px;
   padding-top: 4px;
 }
 
@@ -857,7 +903,7 @@ html[lang="en"] [data-lang="ru"] {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 20px;
-  padding-top: 14px;
+  padding-top: 12px;
   border-top: 1px solid var(--line);
 }
 
@@ -1282,4 +1328,10 @@ html[lang="en"] [data-lang="ru"] {
   .route__runner {
     display: none;
   }
+}
+
+.btn:active,
+.filter:active,
+.pagination__btn:active:not(:disabled) {
+  transform: scale(0.97);
 }
