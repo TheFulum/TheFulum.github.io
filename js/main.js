@@ -148,8 +148,9 @@
       if (ariaLabel) button.setAttribute('aria-label', ariaLabel);
       if (current) button.setAttribute('aria-current', 'page');
       button.addEventListener('click', () => {
+        if (page === state.page) return;
         state.page = page;
-        render();
+        render(true);
         panel.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
       });
       return button;
@@ -167,7 +168,48 @@
       pager.append(pageButton('→', state.page + 1, { disabled: state.page === pages, ariaLabel: t().nextPage }));
     };
 
-    const render = () => {
+    let swapTimer = 0;
+
+    const equalize = () => {
+      const shown = cards.filter((card) => !card.hidden);
+      shown.forEach((card) => { card.style.minHeight = ''; });
+      if (getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length < 2) return;
+      const rows = new Map();
+      shown.forEach((card) => {
+        const body = card.querySelector('.card__more-body');
+        const extra = body && card.querySelector('details[open]') ? body.offsetHeight : 0;
+        const key = card.offsetTop;
+        rows.set(key, Math.max(rows.get(key) || 0, card.offsetHeight - extra));
+      });
+      shown.forEach((card) => { card.style.minHeight = `${rows.get(card.offsetTop)}px`; });
+    };
+    window.siteEqualizeCards = equalize;
+
+    const animateIn = (shown) => {
+      if (reducedMotion || !grid.animate) return;
+      [...shown].forEach((card, i) => {
+        card.classList.add('is-visible');
+        card.animate(
+          [{ opacity: 0, transform: 'translateY(14px)' }, { opacity: 1, transform: 'none' }],
+          { duration: 460, delay: i * 55, easing: 'cubic-bezier(0.22, 1, 0.36, 1)', fill: 'backwards' }
+        );
+      });
+    };
+
+    const render = (animate = false) => {
+      if (animate && !reducedMotion && grid.animate) {
+        clearTimeout(swapTimer);
+        grid.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 160, easing: 'ease-out', fill: 'forwards' });
+        swapTimer = setTimeout(() => {
+          grid.getAnimations().forEach((animation) => animation.cancel());
+          animateIn(apply());
+        }, 160);
+        return;
+      }
+      apply();
+    };
+
+    const apply = () => {
       const visible = cards.filter((card) => matches(card, state.filter));
       const pages = Math.max(1, Math.ceil(visible.length / state.size));
       state.page = Math.min(state.page, pages);
@@ -175,12 +217,14 @@
       const shown = new Set(visible.slice(start, start + state.size));
 
       cards.forEach((card) => { card.hidden = !shown.has(card); });
+      equalize();
       renderPager(pages);
       if (status) {
         status.textContent = pages > 1
           ? t().shownRange(start + 1, start + shown.size, visible.length, state.page, pages)
           : t().shownAll(visible.length);
       }
+      return shown;
     };
 
     buttons.forEach((button) => {
@@ -190,9 +234,10 @@
 
       button.addEventListener('click', () => {
         buttons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+        if (state.filter === filter) return;
         state.filter = filter;
         state.page = 1;
-        render();
+        render(true);
       });
     });
 
@@ -201,7 +246,10 @@
       cancelAnimationFrame(resizeFrame);
       resizeFrame = requestAnimationFrame(() => {
         const size = pageSize();
-        if (size === state.size) return;
+        if (size === state.size) {
+          equalize();
+          return;
+        }
         const firstIndex = (state.page - 1) * state.size;
         state.size = size;
         state.page = Math.floor(firstIndex / size) + 1;
@@ -211,7 +259,48 @@
 
     panel.hidden = false;
     render();
-    onLangChange(render);
+    onLangChange(() => render());
+    if (document.fonts) document.fonts.ready.then(equalize);
+  }
+
+  function initDetails() {
+    document.querySelectorAll('details.card__more').forEach((details) => {
+      const summary = details.querySelector('summary');
+      const body = details.querySelector('.card__more-body');
+      if (!summary || !body) return;
+      let animation = null;
+
+      summary.addEventListener('click', (event) => {
+        if (reducedMotion || !body.animate) return;
+        event.preventDefault();
+        if (animation) animation.cancel();
+        const easing = 'cubic-bezier(0.22, 1, 0.36, 1)';
+
+        if (!details.open || details.classList.contains('is-closing')) {
+          details.classList.remove('is-closing');
+          details.open = true;
+          const height = body.scrollHeight;
+          animation = body.animate(
+            [{ height: '0px', opacity: 0 }, { height: `${height}px`, opacity: 1 }],
+            { duration: 420, easing }
+          );
+          animation.onfinish = () => { animation = null; };
+          return;
+        }
+
+        details.classList.add('is-closing');
+        const height = body.offsetHeight;
+        animation = body.animate(
+          [{ height: `${height}px`, opacity: 1 }, { height: '0px', opacity: 0 }],
+          { duration: 300, easing }
+        );
+        animation.onfinish = () => {
+          details.open = false;
+          details.classList.remove('is-closing');
+          animation = null;
+        };
+      });
+    });
   }
 
   function initReveal() {
@@ -288,6 +377,7 @@
   initLangToggle();
   initThemeToggle();
   initProjects();
+  initDetails();
   initReveal();
   initCounters();
   initNavHighlight();

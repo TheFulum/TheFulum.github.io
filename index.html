@@ -146,6 +146,7 @@
       </ul>
     </div>
 
+    <div class="route-wrap">
     <svg class="route" viewBox="0 -50 560 530" role="img" aria-label="Схема навыков в виде карты метро: основа, веб-разработка, мобильная разработка, десктоп и автоматизация, серверы, облако и боты" data-aria-en="Skill map styled as a metro map: foundation, web development, mobile development, desktop and automation, servers, cloud and bots">
       <g class="route__legend">
         <text class="route__legend-title" x="0" y="-28" data-lang="ru">Схема навыков</text>
@@ -208,6 +209,8 @@
         <animateMotion dur="5s" begin="4.4s" repeatCount="indefinite" path="M213 -22 V152 C213 192 414 177 414 217 V453"/>
       </circle>
     </svg>
+      <p class="route-hint" aria-hidden="true"><span data-lang="ru">Схему можно листать вбок</span><span data-lang="en">Swipe the map sideways</span></p>
+    </div>
   </section>
 
   <section class="section" id="projects" aria-labelledby="projects-title">
@@ -280,11 +283,13 @@
         <p><span data-lang="ru">Информационный сайт о культурном наследии Беларуси.</span><span data-lang="en">An information website about the cultural heritage of Belarus.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Каталог объектов, интерактивная карта, хронология событий, викторины.</span><span data-lang="en">Heritage catalogue, interactive map, timeline of events, quizzes.</span></li>
-            <li><span data-lang="ru">Конструктор маршрутов по дорогам с выбором альтернатив и оптимизацией, конструктор орнаментов.</span><span data-lang="en">Road route builder with alternative paths and optimisation, ornament builder.</span></li>
-            <li><span data-lang="ru">Разграничение ролей, панель администратора с журналом действий, интерфейс на трёх языках.</span><span data-lang="en">Role-based access, admin panel with an audit log, interface in three languages.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Каталог объектов, интерактивная карта, хронология событий, викторины.</span><span data-lang="en">Heritage catalogue, interactive map, timeline of events, quizzes.</span></li>
+              <li><span data-lang="ru">Конструктор маршрутов по дорогам с выбором альтернатив и оптимизацией, конструктор орнаментов.</span><span data-lang="en">Road route builder with alternative paths and optimisation, ornament builder.</span></li>
+              <li><span data-lang="ru">Разграничение ролей, панель администратора с журналом действий, интерфейс на трёх языках.</span><span data-lang="en">Role-based access, admin panel with an audit log, interface in three languages.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">ASP.NET Core 8 MVC, EF Core, <span data-lang="ru">MySQL, 32 таблицы</span><span data-lang="en">MySQL, 32 tables</span>, Identity + JWT, jQuery, Bootstrap, Leaflet, MapLibre</p>
@@ -302,11 +307,13 @@
         <p><span data-lang="ru">Каталог идей для подарков: сертификаты на услуги и впечатления от компаний-партнёров.</span><span data-lang="en">A gift ideas catalogue: service and experience certificates from partner companies.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Каталог идей с поиском, разделы проектов партнёров, услуг и проката.</span><span data-lang="en">Ideas catalogue with search, plus sections for partner projects, services and rentals.</span></li>
-            <li><span data-lang="ru">Блог «Идеи и вдохновение», формы обратной связи и заявок.</span><span data-lang="en">An "Ideas and Inspiration" blog, feedback and request forms.</span></li>
-            <li><span data-lang="ru">Разработан самостоятельно по заказу клиента, сайт работает.</span><span data-lang="en">Built single-handedly for a client; the website is live.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Каталог идей с поиском, разделы проектов партнёров, услуг и проката.</span><span data-lang="en">Ideas catalogue with search, plus sections for partner projects, services and rentals.</span></li>
+              <li><span data-lang="ru">Блог «Идеи и вдохновение», формы обратной связи и заявок.</span><span data-lang="en">An "Ideas and Inspiration" blog, feedback and request forms.</span></li>
+              <li><span data-lang="ru">Разработан самостоятельно по заказу клиента, сайт работает.</span><span data-lang="en">Built single-handedly for a client; the website is live.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">WordPress, WooCommerce, Elementor, Contact Form 7</p>
@@ -324,11 +331,13 @@
         <p><span data-lang="ru">Сайт службы медиации: урегулирование споров без обращения в суд.</span><span data-lang="en">A mediation service website: resolving disputes out of court.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Направления работы медиаторов, каталог специалистов, статьи.</span><span data-lang="en">Mediators' practice areas, specialist directory, articles.</span></li>
-            <li><span data-lang="ru">Подбор медиатора и заказ обратного звонка с защитой reCAPTCHA.</span><span data-lang="en">Mediator selection and callback requests protected by reCAPTCHA.</span></li>
-            <li><span data-lang="ru">Разработан самостоятельно по заказу клиента, сайт работает.</span><span data-lang="en">Built single-handedly for a client; the website is live.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Направления работы медиаторов, каталог специалистов, статьи.</span><span data-lang="en">Mediators' practice areas, specialist directory, articles.</span></li>
+              <li><span data-lang="ru">Подбор медиатора и заказ обратного звонка с защитой reCAPTCHA.</span><span data-lang="en">Mediator selection and callback requests protected by reCAPTCHA.</span></li>
+              <li><span data-lang="ru">Разработан самостоятельно по заказу клиента, сайт работает.</span><span data-lang="en">Built single-handedly for a client; the website is live.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">WordPress, Slider Revolution, <span data-lang="ru">Яндекс Метрика</span><span data-lang="en">Yandex Metrica</span></p>
@@ -346,11 +355,13 @@
         <p><span data-lang="ru">Интернет-магазин музыкальных инструментов и сервис заказа кейтеринга, разработанные по техническим заданиям заказчиков.</span><span data-lang="en">An online musical instrument store and a catering ordering service, built to client specifications.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Каталог, карточка товара, корзина и оформление заказа.</span><span data-lang="en">Catalogue, product page, cart and checkout.</span></li>
-            <li><span data-lang="ru">Регистрация и вход с хешированием паролей BCrypt.</span><span data-lang="en">Sign-up and sign-in with BCrypt password hashing.</span></li>
-            <li><span data-lang="ru">Панель администратора: товары, пользователи и заказы.</span><span data-lang="en">Admin panel for products, users and orders.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Каталог, карточка товара, корзина и оформление заказа.</span><span data-lang="en">Catalogue, product page, cart and checkout.</span></li>
+              <li><span data-lang="ru">Регистрация и вход с хешированием паролей BCrypt.</span><span data-lang="en">Sign-up and sign-in with BCrypt password hashing.</span></li>
+              <li><span data-lang="ru">Панель администратора: товары, пользователи и заказы.</span><span data-lang="en">Admin panel for products, users and orders.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">ASP.NET Core MVC, EF Core, MySQL, BCrypt, Bootstrap</p>
@@ -364,11 +375,13 @@
         <p><span data-lang="ru">Платформа для волонтёров и организаторов мероприятий.</span><span data-lang="en">A platform for volunteers and event organisers.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Мероприятия, заявки волонтёров, регулярные еженедельные серии.</span><span data-lang="en">Events, volunteer applications, recurring weekly series.</span></li>
-            <li><span data-lang="ru">Отметка участников по QR-коду, календарь с напоминаниями, рейтинги волонтёров.</span><span data-lang="en">QR check-in for participants, calendar with reminders, volunteer ratings.</span></li>
-            <li><span data-lang="ru">Личные и групповые чаты, веб-панель администратора.</span><span data-lang="en">Private and group chats, web admin panel.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Мероприятия, заявки волонтёров, регулярные еженедельные серии.</span><span data-lang="en">Events, volunteer applications, recurring weekly series.</span></li>
+              <li><span data-lang="ru">Отметка участников по QR-коду, календарь с напоминаниями, рейтинги волонтёров.</span><span data-lang="en">QR check-in for participants, calendar with reminders, volunteer ratings.</span></li>
+              <li><span data-lang="ru">Личные и групповые чаты, веб-панель администратора.</span><span data-lang="en">Private and group chats, web admin panel.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">Java, MVVM, Firebase Authentication, Cloud Firestore, Cloudinary, osmdroid, ZXing</p>
@@ -389,11 +402,13 @@
         <p><span data-lang="ru">Городская платформа для жителей Могилёва: обращения о проблемах, новости и общественный транспорт.</span><span data-lang="en">A city platform for Mogilev residents: issue reports, news and public transport.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Обращения с фотографиями и геометкой, комментарии, модерация администратором.</span><span data-lang="en">Issue reports with photos and geotags, comments, admin moderation.</span></li>
-            <li><span data-lang="ru">Новостная лента из RSS-источников с фоновым обновлением.</span><span data-lang="en">News feed from RSS sources with background updates.</span></li>
-            <li><span data-lang="ru">Маршруты и остановки транспорта, данные для которых собирает парсер на Node.js.</span><span data-lang="en">Transport routes and stops, with data collected by a Node.js scraper.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Обращения с фотографиями и геометкой, комментарии, модерация администратором.</span><span data-lang="en">Issue reports with photos and geotags, comments, admin moderation.</span></li>
+              <li><span data-lang="ru">Новостная лента из RSS-источников с фоновым обновлением.</span><span data-lang="en">News feed from RSS sources with background updates.</span></li>
+              <li><span data-lang="ru">Маршруты и остановки транспорта, данные для которых собирает парсер на Node.js.</span><span data-lang="en">Transport routes and stops, with data collected by a Node.js scraper.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">Java, Firebase Authentication, Cloud Firestore, Cloudinary, osmdroid, Retrofit, WorkManager, Node.js</p>
@@ -411,11 +426,13 @@
         <p><span data-lang="ru">Интернет-магазин с оптовыми ценами и пунктами самовывоза.</span><span data-lang="en">An online store with wholesale pricing and pickup points.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Каталог, корзина, оформление и отслеживание заказов, оценки товаров.</span><span data-lang="en">Catalogue, cart, checkout and order tracking, product ratings.</span></li>
-            <li><span data-lang="ru">Оптовые ценовые уровни и заявки на получение оптового статуса.</span><span data-lang="en">Wholesale price tiers and applications for wholesale status.</span></li>
-            <li><span data-lang="ru">Панель администратора, отчёты по заказам с экспортом в Excel.</span><span data-lang="en">Admin panel and order reports with Excel export.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Каталог, корзина, оформление и отслеживание заказов, оценки товаров.</span><span data-lang="en">Catalogue, cart, checkout and order tracking, product ratings.</span></li>
+              <li><span data-lang="ru">Оптовые ценовые уровни и заявки на получение оптового статуса.</span><span data-lang="en">Wholesale price tiers and applications for wholesale status.</span></li>
+              <li><span data-lang="ru">Панель администратора, отчёты по заказам с экспортом в Excel.</span><span data-lang="en">Admin panel and order reports with Excel export.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">ASP.NET Core 8 MVC, EF Core, MySQL, BCrypt, ClosedXML, Chart.js</p>
@@ -433,11 +450,13 @@
         <p><span data-lang="ru">Мессенджер с обменом медиафайлами.</span><span data-lang="en">A messenger with media sharing.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Фотографии, видео, документы и голосовые сообщения.</span><span data-lang="en">Photos, videos, documents and voice messages.</span></li>
-            <li><span data-lang="ru">Ответы, пересылка и редактирование сообщений, статусы прочтения.</span><span data-lang="en">Replies, forwarding and message editing, read receipts.</span></li>
-            <li><span data-lang="ru">Статус «в сети», блокировка пользователей, уведомления о новых сообщениях.</span><span data-lang="en">Online status, user blocking, new message notifications.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Фотографии, видео, документы и голосовые сообщения.</span><span data-lang="en">Photos, videos, documents and voice messages.</span></li>
+              <li><span data-lang="ru">Ответы, пересылка и редактирование сообщений, статусы прочтения.</span><span data-lang="en">Replies, forwarding and message editing, read receipts.</span></li>
+              <li><span data-lang="ru">Статус «в сети», блокировка пользователей, уведомления о новых сообщениях.</span><span data-lang="en">Online status, user blocking, new message notifications.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">Java, Firebase Realtime Database, Firebase Authentication, Cloudinary, ExoPlayer</p>
@@ -455,11 +474,13 @@
         <p><span data-lang="ru">Платформа для создания и прохождения тестов.</span><span data-lang="en">A platform for creating and taking tests.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Конструктор тестов с несколькими типами вопросов и начислением баллов.</span><span data-lang="en">Test builder with several question types and scoring.</span></li>
-            <li><span data-lang="ru">Автоматическая и ручная проверка ответов, повторные попытки.</span><span data-lang="en">Automatic and manual answer review, repeat attempts.</span></li>
-            <li><span data-lang="ru">Рейтинг тестов, история прохождений, уведомления.</span><span data-lang="en">Test ratings, attempt history, notifications.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Конструктор тестов с несколькими типами вопросов и начислением баллов.</span><span data-lang="en">Test builder with several question types and scoring.</span></li>
+              <li><span data-lang="ru">Автоматическая и ручная проверка ответов, повторные попытки.</span><span data-lang="en">Automatic and manual answer review, repeat attempts.</span></li>
+              <li><span data-lang="ru">Рейтинг тестов, история прохождений, уведомления.</span><span data-lang="en">Test ratings, attempt history, notifications.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">Java, Firebase Realtime Database, Firebase Authentication, Cloudinary</p>
@@ -477,11 +498,13 @@
         <p><span data-lang="ru">Планировщик семейных задач.</span><span data-lang="en">A family task planner.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Создание семьи и приглашение участников.</span><span data-lang="en">Creating a family and inviting members.</span></li>
-            <li><span data-lang="ru">Задачи с приоритетами, сроками и отметкой о выполнении.</span><span data-lang="en">Tasks with priorities, due dates and completion marks.</span></li>
-            <li><span data-lang="ru">Комментарии к задачам, профили участников.</span><span data-lang="en">Task comments and member profiles.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Создание семьи и приглашение участников.</span><span data-lang="en">Creating a family and inviting members.</span></li>
+              <li><span data-lang="ru">Задачи с приоритетами, сроками и отметкой о выполнении.</span><span data-lang="en">Tasks with priorities, due dates and completion marks.</span></li>
+              <li><span data-lang="ru">Комментарии к задачам, профили участников.</span><span data-lang="en">Task comments and member profiles.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">Java, Firebase Authentication, Cloud Firestore, Cloudinary</p>
@@ -499,11 +522,13 @@
         <p><span data-lang="ru">Приложения с базами данных, разработанные по техническим заданиям заказчиков: 11 программ на Delphi и админ-панель на C#.</span><span data-lang="en">Database-driven applications built to client specifications: 11 Delphi programs and a C# admin panel.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Учёт и сервисы: агентство недвижимости, запись на приём к врачу, гарантийный отдел компьютерного магазина, учёт посещаемости с кодами входа.</span><span data-lang="en">Records and services: a real estate agency, doctor appointments, a computer store warranty desk, attendance tracking with sign-in codes.</span></li>
-            <li><span data-lang="ru">Магазины и склады: спортивное питание, музыкальные инструменты, автозапчасти, склад с фильтрами по цене и сроку годности.</span><span data-lang="en">Stores and warehouses: sports nutrition, musical instruments, car parts, a warehouse with price and expiry date filters.</span></li>
-            <li><span data-lang="ru">Дневник питания с подсчётом хлебных единиц, игра-викторина о Беларуси, админ-панель базы данных бота-викторины.</span><span data-lang="en">A food diary with bread unit counting, a quiz game about Belarus, an admin panel for a quiz bot database.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Учёт и сервисы: агентство недвижимости, запись на приём к врачу, гарантийный отдел компьютерного магазина, учёт посещаемости с кодами входа.</span><span data-lang="en">Records and services: a real estate agency, doctor appointments, a computer store warranty desk, attendance tracking with sign-in codes.</span></li>
+              <li><span data-lang="ru">Магазины и склады: спортивное питание, музыкальные инструменты, автозапчасти, склад с фильтрами по цене и сроку годности.</span><span data-lang="en">Stores and warehouses: sports nutrition, musical instruments, car parts, a warehouse with price and expiry date filters.</span></li>
+              <li><span data-lang="ru">Дневник питания с подсчётом хлебных единиц, игра-викторина о Беларуси, админ-панель базы данных бота-викторины.</span><span data-lang="en">A food diary with bread unit counting, a quiz game about Belarus, an admin panel for a quiz bot database.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">Delphi, VCL, ADO, C#, Windows Forms, MySQL</p>
@@ -517,10 +542,12 @@
         <p><span data-lang="ru">Практические задания стажировки в компании Sotbit.</span><span data-lang="en">Hands-on assignments from an internship at Sotbit.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Чат на чистом PHP с собственным слоем моделей, учётными записями и передачей файлов. После сдачи выполнена оптимизация.</span><span data-lang="en">A chat in plain PHP with a custom model layer, user accounts and file sharing, optimised after delivery.</span></li>
-            <li><span data-lang="ru">Парсер Excel-файлов на PHP с использованием PhpSpreadsheet.</span><span data-lang="en">An Excel file parser in PHP built with PhpSpreadsheet.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Чат на чистом PHP с собственным слоем моделей, учётными записями и передачей файлов. После сдачи выполнена оптимизация.</span><span data-lang="en">A chat in plain PHP with a custom model layer, user accounts and file sharing, optimised after delivery.</span></li>
+              <li><span data-lang="ru">Парсер Excel-файлов на PHP с использованием PhpSpreadsheet.</span><span data-lang="en">An Excel file parser in PHP built with PhpSpreadsheet.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">PHP, JavaScript, Composer, PhpSpreadsheet</p>
@@ -541,11 +568,13 @@
         <p><span data-lang="ru">Консольная утилита для сохранения сайтов и их офлайн-просмотра, включая сайты на WebGL.</span><span data-lang="en">A command-line tool that saves websites for offline viewing, including WebGL sites.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Перехват всех сетевых ответов в headless Chromium и обход страниц до заданной глубины.</span><span data-lang="en">Captures every network response in headless Chromium and crawls pages to a set depth.</span></li>
-            <li><span data-lang="ru">Имитация действий пользователя для запуска WebGL и анимаций.</span><span data-lang="en">Simulates user actions to start WebGL scenes and animations.</span></li>
-            <li><span data-lang="ru">Докачка пропущенных файлов за несколько проходов через локальный сервер.</span><span data-lang="en">Downloads missing files in several passes through a local server.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Перехват всех сетевых ответов в headless Chromium и обход страниц до заданной глубины.</span><span data-lang="en">Captures every network response in headless Chromium and crawls pages to a set depth.</span></li>
+              <li><span data-lang="ru">Имитация действий пользователя для запуска WebGL и анимаций.</span><span data-lang="en">Simulates user actions to start WebGL scenes and animations.</span></li>
+              <li><span data-lang="ru">Докачка пропущенных файлов за несколько проходов через локальный сервер.</span><span data-lang="en">Downloads missing files in several passes through a local server.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">TypeScript, Node.js, Playwright, Cheerio</p>
@@ -559,10 +588,12 @@
         <p><span data-lang="ru">Самостоятельное развёртывание и настройка VPN-сервера на VPS.</span><span data-lang="en">Deployed and configured a VPN server on a VPS on my own.</span></p>
         <details class="card__more">
           <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <ul class="bullets">
-            <li><span data-lang="ru">Настройка сервера на Linux и панели управления 3X-UI.</span><span data-lang="en">Linux server and 3X-UI control panel setup.</span></li>
-            <li><span data-lang="ru">Протокол VLESS + Reality, подключение клиентских устройств.</span><span data-lang="en">VLESS + Reality protocol and client device setup.</span></li>
-          </ul>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Настройка сервера на Linux и панели управления 3X-UI.</span><span data-lang="en">Linux server and 3X-UI control panel setup.</span></li>
+              <li><span data-lang="ru">Протокол VLESS + Reality, подключение клиентских устройств.</span><span data-lang="en">VLESS + Reality protocol and client device setup.</span></li>
+            </ul>
+          </div>
         </details>
         <div class="card__bottom">
           <p class="card__stack">Linux, VPS, 3X-UI, VLESS + Reality</p>
