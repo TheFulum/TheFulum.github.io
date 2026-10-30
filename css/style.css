@@ -914,6 +914,116 @@ html[lang="en"] [data-lang="ru"] {
   overflow: hidden;
 }
 
+.more-group__title {
+  margin-bottom: 8px;
+  color: var(--mute);
+  font: 600 12.5px var(--font-body);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.more-group + .more-group {
+  margin-top: 14px;
+}
+
+.sheet-lock {
+  overflow: hidden;
+  padding-right: var(--scrollbar, 0);
+}
+
+.sheet {
+  width: min(1040px, calc(100vw - 48px));
+  height: fit-content;
+  max-width: none;
+  max-height: calc(100dvh - 48px);
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: inherit;
+  box-shadow: var(--shadow);
+}
+
+.sheet[open] {
+  display: flex;
+}
+
+.sheet::backdrop {
+  background: rgb(0 0 0 / 0);
+  transition: background-color 0.3s ease;
+}
+
+.sheet.is-open::backdrop {
+  background: rgb(0 0 0 / 0.55);
+}
+
+.sheet__inner {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.sheet__close {
+  position: sticky;
+  top: 14px;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin: 14px 14px -58px auto;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: inherit;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.sheet__close:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.sheet__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 32px 36px;
+}
+
+.sheet .card__type {
+  display: inline-flex;
+}
+
+.sheet .card__title {
+  padding-right: 56px;
+  font-size: 28px;
+}
+
+.sheet__groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px 36px;
+  margin: 14px 0 6px;
+}
+
+.sheet .more-group + .more-group {
+  margin-top: 0;
+}
+
+.sheet .bullets {
+  font-size: 15.5px;
+}
+
+.sheet .card__stack {
+  font-size: 14px;
+}
+
 .card__links {
   display: flex;
   flex-wrap: wrap;
@@ -1362,4 +1472,28 @@ html[lang="en"] [data-lang="ru"] {
 .filter:active,
 .pagination__btn:active:not(:disabled) {
   transform: scale(0.97);
+}
+
+
+
+@media (max-width: 640px) {
+  .sheet {
+    width: 100vw;
+    height: 100dvh;
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .sheet__content {
+    padding: 24px 20px 32px;
+  }
+
+  .sheet .card__title {
+    font-size: 23px;
+  }
+
+  .sheet__groups {
+    grid-template-columns: 1fr;
+  }
 }

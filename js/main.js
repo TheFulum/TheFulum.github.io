@@ -22,6 +22,7 @@
       switchLang: 'Switch to English',
       prevPage: 'Предыдущая страница',
       nextPage: 'Следующая страница',
+      closeSheet: 'Закрыть подробности проекта',
       page: (n) => `Страница ${n}`,
       shownAll: (total) => `Показано проектов: ${total}`,
       shownRange: (from, to, total, page, pages) => `Проекты ${from}–${to} из ${total}, страница ${page} из ${pages}`,
@@ -35,6 +36,7 @@
       switchLang: 'Переключить на русский',
       prevPage: 'Previous page',
       nextPage: 'Next page',
+      closeSheet: 'Close project details',
       page: (n) => `Page ${n}`,
       shownAll: (total) => `Projects shown: ${total}`,
       shownRange: (from, to, total, page, pages) => `Projects ${from}–${to} of ${total}, page ${page} of ${pages}`,
@@ -176,10 +178,8 @@
       if (getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length < 2) return;
       const rows = new Map();
       shown.forEach((card) => {
-        const body = card.querySelector('.card__more-body');
-        const extra = body && card.querySelector('details[open]') ? body.offsetHeight : 0;
         const key = card.offsetTop;
-        rows.set(key, Math.max(rows.get(key) || 0, card.offsetHeight - extra));
+        rows.set(key, Math.max(rows.get(key) || 0, card.offsetHeight));
       });
       shown.forEach((card) => { card.style.minHeight = `${rows.get(card.offsetTop)}px`; });
     };
@@ -263,44 +263,129 @@
     if (document.fonts) document.fonts.ready.then(equalize);
   }
 
-  function initDetails() {
-    document.querySelectorAll('details.card__more').forEach((details) => {
-      const summary = details.querySelector('summary');
-      const body = details.querySelector('.card__more-body');
-      if (!summary || !body) return;
-      let animation = null;
+  function initProjectSheet() {
+    const sheet = document.getElementById('project-sheet');
+    const inner = sheet && sheet.querySelector('.sheet__inner');
+    const content = document.getElementById('sheet-content');
+    const close = document.getElementById('sheet-close');
+    if (!sheet || !sheet.showModal || !content || !close) return;
 
-      summary.addEventListener('click', (event) => {
-        if (reducedMotion || !body.animate) return;
-        event.preventDefault();
-        if (animation) animation.cancel();
-        const easing = 'cubic-bezier(0.22, 1, 0.36, 1)';
+    const easing = 'cubic-bezier(0.22, 1, 0.36, 1)';
+    const canAnimate = () => !reducedMotion && Boolean(sheet.animate);
+    let activeCard = null;
+    let animation = null;
 
-        if (!details.open || details.classList.contains('is-closing')) {
-          details.classList.remove('is-closing');
-          details.open = true;
-          const height = body.scrollHeight;
-          animation = body.animate(
-            [{ height: '0px', opacity: 0 }, { height: `${height}px`, opacity: 1 }],
-            { duration: 420, easing }
-          );
-          animation.onfinish = () => { animation = null; };
+    const rectFrame = (rect) => ({
+      top: `${rect.top}px`,
+      left: `${rect.left}px`,
+      width: `${rect.width}px`,
+      height: `${rect.height}px`,
+      margin: '0px',
+    });
+
+    const fill = (card) => {
+      content.replaceChildren();
+      const groups = document.createElement('div');
+      groups.className = 'sheet__groups';
+      [...card.children].forEach((child) => {
+        if (child.matches('details')) {
+          groups.append(...[...child.querySelector('.card__more-body').children].map((node) => node.cloneNode(true)));
+          content.append(groups);
           return;
         }
+        const copy = child.cloneNode(true);
+        if (copy.matches('.card__title')) copy.id = 'sheet-title';
+        content.append(copy);
+      });
+    };
 
-        details.classList.add('is-closing');
-        const height = body.offsetHeight;
-        animation = body.animate(
-          [{ height: `${height}px`, opacity: 1 }, { height: '0px', opacity: 0 }],
-          { duration: 300, easing }
-        );
-        animation.onfinish = () => {
-          details.open = false;
-          details.classList.remove('is-closing');
-          animation = null;
-        };
+    const updateLabel = () => close.setAttribute('aria-label', t().closeSheet);
+
+    const finishClose = () => {
+      sheet.close();
+      sheet.classList.remove('is-open', 'is-closing');
+      document.documentElement.classList.remove('sheet-lock');
+      document.documentElement.style.removeProperty('--scrollbar');
+      if (activeCard) activeCard.style.visibility = '';
+      activeCard = null;
+      animation = null;
+    };
+
+    const open = (card, summary) => {
+      if (animation) animation.cancel();
+      activeCard = card;
+      sheet.dataset.category = card.dataset.category;
+      fill(card);
+      const scrollbar = window.innerWidth - document.documentElement.clientWidth;
+      document.documentElement.style.setProperty('--scrollbar', `${scrollbar}px`);
+      document.documentElement.classList.add('sheet-lock');
+      const from = card.getBoundingClientRect();
+      sheet.showModal();
+      inner.scrollTop = 0;
+      sheet.classList.add('is-open');
+      close.focus();
+      sheet.returnFocus = summary;
+      if (!canAnimate()) return;
+
+      const to = sheet.getBoundingClientRect();
+      card.style.visibility = 'hidden';
+      content.style.width = `${content.getBoundingClientRect().width}px`;
+      animation = sheet.animate([rectFrame(from), rectFrame(to)], { duration: 460, easing });
+      content.animate(
+        [{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }],
+        { duration: 340, delay: 90, easing, fill: 'backwards' }
+      );
+      animation.onfinish = () => {
+        content.style.width = '';
+        animation = null;
+      };
+    };
+
+    const hide = () => {
+      if (!sheet.open || sheet.classList.contains('is-closing')) return;
+      if (animation) animation.cancel();
+      content.style.width = '';
+      const target = sheet.returnFocus;
+      sheet.classList.add('is-closing');
+      sheet.classList.remove('is-open');
+      if (!canAnimate() || !activeCard) {
+        finishClose();
+        if (target) target.focus();
+        return;
+      }
+
+      const from = sheet.getBoundingClientRect();
+      const to = activeCard.getBoundingClientRect();
+      content.style.width = `${content.getBoundingClientRect().width}px`;
+      content.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 130, easing: 'ease-out', fill: 'forwards' });
+      animation = sheet.animate([rectFrame(from), rectFrame(to)], { duration: 300, easing, fill: 'forwards' });
+      animation.onfinish = () => {
+        content.getAnimations().forEach((item) => item.cancel());
+        content.style.width = '';
+        animation.cancel();
+        finishClose();
+        if (target) target.focus();
+      };
+    };
+
+    document.querySelectorAll('details.card__more > summary').forEach((summary) => {
+      summary.addEventListener('click', (event) => {
+        event.preventDefault();
+        open(summary.closest('.card'), summary);
       });
     });
+
+    close.addEventListener('click', hide);
+    sheet.addEventListener('cancel', (event) => {
+      event.preventDefault();
+      hide();
+    });
+    sheet.addEventListener('click', (event) => {
+      if (event.target === sheet) hide();
+    });
+
+    updateLabel();
+    onLangChange(updateLabel);
   }
 
   function initReveal() {
@@ -377,7 +462,7 @@
   initLangToggle();
   initThemeToggle();
   initProjects();
-  initDetails();
+  initProjectSheet();
   initReveal();
   initCounters();
   initNavHighlight();
