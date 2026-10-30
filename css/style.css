@@ -889,8 +889,8 @@ html[lang="en"] [data-lang="ru"] {
   border-radius: 50%;
 }
 
-[data-category="php"] .card__type { background: var(--tint-clay); }
-[data-category="php"] .card__type::before { background: var(--dot-web); }
+[data-category="web"] .card__type { background: var(--tint-clay); }
+[data-category="web"] .card__type::before { background: var(--dot-web); }
 [data-category="other"] .card__type { background: var(--tint-sage); }
 [data-category="other"] .card__type::before { background: var(--dot-android); }
 

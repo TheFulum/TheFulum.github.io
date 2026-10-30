@@ -186,9 +186,9 @@
       <g class="route__pin route__pin--mobile" style="--delay: 1.86s"><circle cx="146" cy="291" r="7"/><text x="162" y="295">Vue · Angular</text></g>
       <g class="route__pin route__pin--mobile" style="--delay: 2.1s"><circle cx="146" cy="345" r="7"/><text x="162" y="349">SASS<tspan class="route__sub" x="162" dy="15">Bootstrap</tspan></text></g>
 
-      <g class="route__pin route__pin--desktop" style="--delay: 1.72s"><circle cx="280" cy="237" r="7"/><text x="296" y="241">PHPUnit<tspan class="route__sub" x="296" dy="15">Vitest</tspan></text></g>
-      <g class="route__pin route__pin--desktop" style="--delay: 1.96s"><circle cx="280" cy="291" r="7"/><text x="296" y="295">PHPStan</text></g>
-      <g class="route__pin route__pin--desktop" style="--delay: 2.2s"><circle cx="280" cy="345" r="7"/><text x="296" y="349">SOLID · KISS<tspan class="route__sub" x="296" dy="15">DRY · MVC · MVVM</tspan></text></g>
+      <g class="route__pin route__pin--desktop" style="--delay: 1.72s"><circle cx="280" cy="237" r="7"/><text x="296" y="241">SOLID · KISS<tspan class="route__sub" x="296" dy="15">DRY · MVC · MVVM</tspan></text></g>
+      <g class="route__pin route__pin--desktop" style="--delay: 1.96s"><circle cx="280" cy="291" r="7"/><text x="296" y="295">PHPUnit<tspan class="route__sub" x="296" dy="15">Vitest</tspan></text></g>
+      <g class="route__pin route__pin--desktop" style="--delay: 2.2s"><circle cx="280" cy="345" r="7"/><text x="296" y="349">PHPStan</text></g>
 
       <g class="route__pin route__pin--cloud" style="--delay: 2.16s"><circle cx="414" cy="237" r="7"/><text x="430" y="241">Docker</text></g>
       <g class="route__pin route__pin--cloud" style="--delay: 2.34s"><circle cx="414" cy="291" r="7"/><text x="430" y="295">Linux · VPS</text></g>
@@ -291,7 +291,7 @@
           <ul class="bullets">
             <li><span data-lang="ru"><a href="https://dari-radost.by/" target="_blank" rel="noopener">dari-radost.by</a>: каталог идей для подарков на WooCommerce с поиском, разделами партнёров и блогом.</span><span data-lang="en"><a href="https://dari-radost.by/" target="_blank" rel="noopener">dari-radost.by</a>: a gift ideas catalogue on WooCommerce with search, partner sections and a blog.</span></li>
             <li><span data-lang="ru"><a href="https://mirno.by/" target="_blank" rel="noopener">mirno.by</a>: сайт службы медиации с каталогом специалистов, статьями и формой заказа обратного звонка.</span><span data-lang="en"><a href="https://mirno.by/" target="_blank" rel="noopener">mirno.by</a>: a mediation service website with a specialist directory, articles and a callback request form.</span></li>
-            <li><span data-lang="ru">Настройка тем и плагинов, вёрстка недостающих блоков в Elementor, адаптив под мобильные.</span><span data-lang="en">Theme and plugin setup, building missing blocks in Elementor, mobile-friendly layout.</span></li>
+            <li><span data-lang="ru">Настройка тем и плагинов, вёрстка недостающих блоков, адаптив под мобильные.</span><span data-lang="en">Theme and plugin setup, building missing blocks, mobile-friendly layout.</span></li>
             <li><span data-lang="ru">Формы на Contact Form 7 с reCAPTCHA, подключение Яндекс Метрики, настройка хостинга и домена.</span><span data-lang="en">Contact Form 7 forms with reCAPTCHA, Yandex Metrica, hosting and domain setup.</span></li>
             <li><span data-lang="ru">Лендинги на чистом PHP, JavaScript, HTML и CSS с актуальными ценами на продукцию: админ-панель для управления ценами и контентом, подключение Яндекс Метрики.</span><span data-lang="en">Landing pages in plain PHP, JavaScript, HTML and CSS with up-to-date product prices: an admin panel for prices and content, Yandex Metrica.</span></li>
             <li><span data-lang="ru">Интернет-магазин на чистом PHP без CMS по запросу заказчика: каталог товаров, профиль пользователя, отзывы, админ-панель.</span><span data-lang="en">An online store in plain PHP without a CMS at the client's request: product catalogue, user profile, reviews, admin panel.</span></li>
@@ -304,7 +304,6 @@
           <ul class="chips" aria-label="Технологии" data-aria-en="Technologies">
             <li class="chip">WordPress</li>
             <li class="chip">WooCommerce</li>
-            <li class="chip">Elementor</li>
             <li class="chip">PHP</li>
             <li class="chip">JavaScript</li>
             <li class="chip">HTML</li>
@@ -312,6 +311,8 @@
             <li class="chip">MySQL</li>
             <li class="chip">Python</li>
             <li class="chip">Telegram Bot API</li>
+            <li class="chip">Git</li>
+            <li class="chip">Docker</li>
           </ul>
         </div>
       </article>
@@ -326,14 +327,14 @@
 
     <div class="filters" id="project-filters" role="group" aria-label="Фильтр проектов" data-aria-en="Project filter" hidden>
       <button class="filter" type="button" data-filter="all" aria-pressed="true"><span data-lang="ru">Все</span><span data-lang="en">All</span> <span class="filter__count"></span></button>
-      <button class="filter" type="button" data-filter="php" aria-pressed="false"><span data-lang="ru">PHP и WordPress</span><span data-lang="en">PHP and WordPress</span> <span class="filter__count"></span></button>
+      <button class="filter" type="button" data-filter="web" aria-pressed="false"><span data-lang="ru">Веб</span><span data-lang="en">Web</span> <span class="filter__count"></span></button>
       <button class="filter" type="button" data-filter="other" aria-pressed="false"><span data-lang="ru">Другой стек</span><span data-lang="en">Other stack</span> <span class="filter__count"></span></button>
     </div>
     <p class="visually-hidden" id="filter-status" aria-live="polite"></p>
 
     <div class="project-grid" id="project-grid">
 
-      <article class="card" data-category="php">
+      <article class="card" data-category="web">
         <p class="card__type"><span data-lang="ru">Коммерческий проект</span><span data-lang="en">Commercial project</span></p>
         <h3 class="card__title"><span data-lang="ru">Дари радость</span><span data-lang="en">Dari Radost</span></h3>
         <p><span data-lang="ru">Каталог идей для подарков: сертификаты на услуги и впечатления от компаний-партнёров.</span><span data-lang="en">A gift ideas catalogue: service and experience certificates from partner companies.</span></p>
@@ -348,7 +349,7 @@
           </div>
         </details>
         <div class="card__bottom">
-          <p class="card__stack">WordPress, WooCommerce, Elementor, Contact Form 7</p>
+          <p class="card__stack">WordPress, WooCommerce, Contact Form 7</p>
           <div class="card__links">
             <a class="link" href="https://dari-radost.by/" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>dari-radost.by
@@ -357,7 +358,7 @@
         </div>
       </article>
 
-      <article class="card" data-category="php">
+      <article class="card" data-category="web">
         <p class="card__type"><span data-lang="ru">Коммерческий проект</span><span data-lang="en">Commercial project</span></p>
         <h3 class="card__title">Mirno.by</h3>
         <p><span data-lang="ru">Сайт службы медиации: урегулирование споров без обращения в суд.</span><span data-lang="en">A mediation service website: resolving disputes out of court.</span></p>
@@ -381,7 +382,7 @@
         </div>
       </article>
 
-      <article class="card" data-category="php">
+      <article class="card" data-category="web">
         <p class="card__type"><span data-lang="ru">Стажировка Sotbit</span><span data-lang="en">Sotbit internship</span></p>
         <h3 class="card__title"><span data-lang="ru">Чат и парсер на PHP</span><span data-lang="en">PHP chat and parser</span></h3>
         <p><span data-lang="ru">Практические задания стажировки в компании Sotbit.</span><span data-lang="en">Hands-on assignments from an internship at Sotbit.</span></p>
@@ -407,7 +408,38 @@
         </div>
       </article>
 
-      <article class="card" data-category="other">
+      <article class="card" data-category="web">
+        <p class="card__type"><span data-lang="ru">Веб и Android</span><span data-lang="en">Web and Android</span></p>
+        <h3 class="card__title">Traces</h3>
+        <p><span data-lang="ru">Путеводитель по памятным местам Беларуси: 102 объекта, 7 из них с 3D-моделями.</span><span data-lang="en">A guide to memorial sites of Belarus: 102 sites, 7 of them with 3D models.</span></p>
+        <details class="card__more">
+          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
+          <div class="card__more-body">
+            <ul class="bullets">
+              <li><span data-lang="ru">Интерактивная карта, поиск, интерфейс на белорусском, русском и английском языках.</span><span data-lang="en">Interactive map, search, interface in Belarusian, Russian and English.</span></li>
+              <li><span data-lang="ru">ИИ-гид отвечает на вопросы и формирует маршруты по городу или области.</span><span data-lang="en">An AI guide answers questions and builds routes across a city or region.</span></li>
+              <li><span data-lang="ru">Планировщик поездок: порядок точек, маршрут по дорогам, разбивка по дням.</span><span data-lang="en">Trip planner: stop order, road routing, day-by-day plans.</span></li>
+              <li><span data-lang="ru">Личный кабинет, отзывы и оценки, панель администратора.</span><span data-lang="en">Personal account, reviews and ratings, admin panel.</span></li>
+            </ul>
+          </div>
+        </details>
+        <div class="card__bottom">
+          <p class="card__stack">JavaScript, Java (Android), Firebase, Cloudflare Workers, Leaflet, OSRM</p>
+          <div class="card__links">
+            <a class="link" href="https://traces-ffd5c.web.app/" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg><span data-lang="ru">Сайт</span><span data-lang="en">Website</span>
+            </a>
+            <a class="link" href="https://github.com/TheFulum/traces.web-app" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Код сайта</span><span data-lang="en">Website code</span>
+            </a>
+            <a class="link" href="https://github.com/TheFulum/traces.mobile-app" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Код приложения</span><span data-lang="en">App code</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="web">
         <p class="card__type"><span data-lang="ru">Веб-сайт</span><span data-lang="en">Website</span></p>
         <h3 class="card__title">BelarusHeritage</h3>
         <p><span data-lang="ru">Информационный сайт о культурном наследии Беларуси.</span><span data-lang="en">An information website about the cultural heritage of Belarus.</span></p>
@@ -450,37 +482,6 @@
           <div class="card__links">
             <a class="link" href="https://github.com/TheFulum/AndroidMessenger" target="_blank" rel="noopener">
               <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Исходный код</span><span data-lang="en">Source code</span>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card" data-category="other">
-        <p class="card__type"><span data-lang="ru">Веб и Android</span><span data-lang="en">Web and Android</span></p>
-        <h3 class="card__title">Traces</h3>
-        <p><span data-lang="ru">Путеводитель по памятным местам Беларуси: 102 объекта, 7 из них с 3D-моделями.</span><span data-lang="en">A guide to memorial sites of Belarus: 102 sites, 7 of them with 3D models.</span></p>
-        <details class="card__more">
-          <summary><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span></summary>
-          <div class="card__more-body">
-            <ul class="bullets">
-              <li><span data-lang="ru">Интерактивная карта, поиск, интерфейс на белорусском, русском и английском языках.</span><span data-lang="en">Interactive map, search, interface in Belarusian, Russian and English.</span></li>
-              <li><span data-lang="ru">ИИ-гид отвечает на вопросы и формирует маршруты по городу или области.</span><span data-lang="en">An AI guide answers questions and builds routes across a city or region.</span></li>
-              <li><span data-lang="ru">Планировщик поездок: порядок точек, маршрут по дорогам, разбивка по дням.</span><span data-lang="en">Trip planner: stop order, road routing, day-by-day plans.</span></li>
-              <li><span data-lang="ru">Личный кабинет, отзывы и оценки, панель администратора.</span><span data-lang="en">Personal account, reviews and ratings, admin panel.</span></li>
-            </ul>
-          </div>
-        </details>
-        <div class="card__bottom">
-          <p class="card__stack">JavaScript, Java (Android), Firebase, Cloudflare Workers, Leaflet, OSRM</p>
-          <div class="card__links">
-            <a class="link" href="https://traces-ffd5c.web.app/" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg><span data-lang="ru">Сайт</span><span data-lang="en">Website</span>
-            </a>
-            <a class="link" href="https://github.com/TheFulum/traces.web-app" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Код сайта</span><span data-lang="en">Website code</span>
-            </a>
-            <a class="link" href="https://github.com/TheFulum/traces.mobile-app" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span data-lang="ru">Код приложения</span><span data-lang="en">App code</span>
             </a>
           </div>
         </div>
