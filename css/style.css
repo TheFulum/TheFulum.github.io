@@ -889,14 +889,10 @@ html[lang="en"] [data-lang="ru"] {
   border-radius: 50%;
 }
 
-[data-category="android"] .card__type { background: var(--tint-sage); }
-[data-category="android"] .card__type::before { background: var(--dot-android); }
-[data-category="web"] .card__type { background: var(--tint-clay); }
-[data-category="web"] .card__type::before { background: var(--dot-web); }
-[data-category="desktop"] .card__type { background: var(--tint-plum); }
-[data-category="desktop"] .card__type::before { background: var(--dot-desktop); }
-[data-category="tools"] .card__type { background: var(--tint-honey); }
-[data-category="tools"] .card__type::before { background: var(--dot-tools); }
+[data-category="php"] .card__type { background: var(--tint-clay); }
+[data-category="php"] .card__type::before { background: var(--dot-web); }
+[data-category="other"] .card__type { background: var(--tint-sage); }
+[data-category="other"] .card__type::before { background: var(--dot-android); }
 
 .card__title {
   font-size: 19px;
