@@ -14,8 +14,8 @@
 
   const STRINGS = {
     ru: {
-      title: 'Липовский Даниил — PHP-разработчик',
-      description: 'PHP-разработчик из Беларуси: интернет-магазины и сайты на чистом PHP, Laravel и WordPress, MySQL и PostgreSQL, JavaScript и Vue.',
+      title: 'Липовский Даниил — PHP Fullstack разработчик',
+      description: 'PHP Fullstack разработчик из Беларуси: интернет-магазины и сайты на чистом PHP, Laravel и WordPress, MySQL и PostgreSQL, JavaScript и Vue.',
       age: (n) => ` (${n} ${pluralizeYearsRu(n)})`,
       themeToDark: 'Включить тёмную тему',
       themeToLight: 'Включить светлую тему',
@@ -28,8 +28,8 @@
       shownRange: (from, to, total, page, pages) => `Проекты ${from}–${to} из ${total}, страница ${page} из ${pages}`,
     },
     en: {
-      title: 'Daniil Lipouski — PHP Developer',
-      description: 'PHP developer from Belarus: online stores and websites in plain PHP, Laravel and WordPress, MySQL and PostgreSQL, JavaScript and Vue.',
+      title: 'Daniil Lipouski — PHP Fullstack Developer',
+      description: 'PHP Fullstack developer from Belarus: online stores and websites in plain PHP, Laravel and WordPress, MySQL and PostgreSQL, JavaScript and Vue.',
       age: (n) => ` (${n} ${n === 1 ? 'year' : 'years'} old)`,
       themeToDark: 'Switch to dark theme',
       themeToLight: 'Switch to light theme',
